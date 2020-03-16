@@ -1,0 +1,51 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(270deg, #efd597, #f3dfb1);
+  background-size: 400% 400%;
+  animation: background 11s ease infinite;
+  color:$primaryText;
+}
+
+.wrapper {
+  max-width:1170px;
+  margin: 0 auto;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+// Fonts!
+
+h1, h2, h3, .topBar span {
+  font-family: 'Crete Round', serif;
+}
+
+p, li, a {
+  font-family: 'Baloo Chettan 2', cursive;
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.knees {
+      color: crimson;
+    }
+    .too {
+      color: blue;
+    }
+    .sharp {
+      color:green;
+    }
+
+@keyframes background {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}

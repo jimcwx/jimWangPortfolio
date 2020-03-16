@@ -1,0 +1,11 @@
+@mixin flex($colOrRow) {
+  display: flex;
+  flex-direction:$colOrRow;
+}
+
+@mixin flexCenter($colOrRow) {
+  display: flex;
+  flex-direction:$colOrRow;
+  justify-content: center;
+  align-items:center;
+}
