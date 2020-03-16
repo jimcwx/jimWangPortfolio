@@ -33,7 +33,7 @@
 
     li:hover a,
     li:focus a {
-      border: 1px solid $thirdBackground;
+      outline: 1px solid $thirdBackground;
       background: $primaryText;
       color: $primaryBackground;
       text-shadow:none;

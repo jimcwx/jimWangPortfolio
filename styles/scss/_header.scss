@@ -1,8 +1,10 @@
 header {
   height: 100vh;
+  background-color: rgb(44, 44, 44);
 
   .wrapper {
     height: 100%;
+    background: #f3f0e9;
     @include flex(column);
 
     .topBar {
@@ -26,34 +28,121 @@ header {
 
   //first line styles and animations
   .firstLine {
+    span {
+      display: inline-block;
+    }
     span.firstWord {
+      // transform:scale(1.6);
       opacity:0;
       color:$primaryText;
+      animation: flashIn 0.5s ease 0.5s;
+      animation-fill-mode:forwards;
     }
     span.secondWord{
+      // transform:scale(1.6);
       opacity: 0;
       color:$primaryText;
+      animation: flashIn 0.5s ease 0.7s;
+      animation-fill-mode:forwards;
     }
     span.thirdWord{
+      // transform:scale(1.6);
       opacity: 0;
       color:$primaryText;
+      animation: flashIn 0.5s ease 1s;
+      animation-fill-mode:forwards;
     }
     span.fourthWord{
+      // transform:scale(1.6);
       opacity: 0;
       color:$primaryText;
+      animation: flashIn 0.5s ease 1.3s;
+      animation-fill-mode:forwards;
+    }
+  }
+
+  // second line styles and animations
+  .mainLine {
+    .knees,.too,.sharp {
+      display:inline-block;
+      opacity:0;
+    }
+    .knees{
+      animation: wiggleIn 0.7s ease 1.9s;
+      animation-fill-mode:forwards;
+    }
+    .too {
+      animation: wiggleIn 0.7s ease 2.5s;
+      animation-fill-mode:forwards;
+    }
+    .sharp {
+      animation: wiggleIn 0.7s ease 3.1s;
+      animation-fill-mode:forwards;
+    }
+
+    .letter {
+      display:inline-block;
+      opacity:0;
+    }
+
+    .firstWord {
+      .letter2 {
+        animation: flyIn1 1s ease 3.7s;
+        animation-fill-mode:forwards;
+      }
+      .letter3 {
+        animation: flyIn2 1s ease 3.9s;
+        animation-fill-mode:forwards;
+      }
+      .letter4 {
+        animation: flyIn3 1s ease 4.1s;
+        animation-fill-mode:forwards;
+      }
+      .letter5 {
+        animation: flyIn4 1s ease 4.3s;
+        animation-fill-mode:forwards;
+      }
+    }
+
+    .secondWord {
+      .letter2 {
+        animation: flyIn5 1s ease 4.5s;
+        animation-fill-mode:forwards;
+      }
+      .letter3 {
+        animation: flyIn6 1s ease 4.7s;
+        animation-fill-mode:forwards;
+      }
+    }
+
+    .thirdWord {
+      .letter2 {
+        animation: flyIn7 1s ease 4.9s;
+        animation-fill-mode:forwards;
+      }
+      .letter3 {
+        animation: flyIn8 1s ease 5.1s;
+        animation-fill-mode:forwards;
+      }
+      .letter4 {
+        animation: flyIn9 1s ease 5.3s;
+        animation-fill-mode:forwards;
+      }
+      .letter5 {
+        animation: flyIn10 1s ease 5.5s;
+        animation-fill-mode:forwards;
+      }
     }
   }
 }
 
+// Keyframes for header
 @keyframes flashIn {
   0% {
     transform:scale(1.6);
-    color:white;
+    color:$thirdBackground;
     text-shadow:2px solid goldenrod;
     opacity:1;
-  }
-  50% {
-    transform:scale(1.3);
   }
   100% {
     transform:scale(1);
@@ -62,3 +151,260 @@ header {
     opacity:1;
   }
 }
+
+@keyframes wiggleIn {
+  0% {
+    transform:scale(0.7) rotate(0deg);
+    opacity:1;
+  }
+  10% {
+    transform:scale(1.16) rotate(20deg);
+  }
+  20% {
+    transform:scale(1.62) rotate(-20deg);
+  }
+  30% {
+    transform:scale(2.08) rotate(20deg);
+  }
+  40% {
+    transform:scale(2.54) rotate(-20deg);
+  }
+  50% {
+    transform:scale(3) rotate(0deg);
+  }
+  100%{
+    transform:scale(1);
+    opacity:1;
+  }
+}
+
+@keyframes flyIn1 {
+  0%{
+    transform: translate(-1000px,-1000px);
+    color:$primaryText;
+    text-shadow:none;
+    opacity:1
+  }
+  40%{
+    transform: translate(-500px,-500px);
+  }
+  80%{
+    transform: translate(0) scale(2);
+    color: rgba(13, 102, 54,0.60);
+    text-shadow:2px solid goldenrod;
+  }
+  100%{
+    transform: translate(0) scale(1);
+    color:$primaryText;
+    text-shadow:none;
+    opacity:1
+  }
+}
+
+@keyframes flyIn2 {
+  0%{transform: translate(0) scale(2);
+    transform: translate(-800px,-1000px);
+    color:$primaryText;
+    text-shadow:none;
+    opacity:1
+  }
+  40%{
+    transform: translate(-400px,-500px);
+  }
+  80%{
+    transform: translate(0) scale(2);
+    color: rgba(13, 102, 54,0.60);
+    text-shadow:2px solid $primaryText;
+  }
+  100%{
+    transform: translate(0) scale(1);
+    color:$primaryText;
+    text-shadow:none;
+    opacity:1
+  }
+}
+
+@keyframes flyIn3 {
+  0%{
+    transform: translate(-600px,-1000px);
+    color:$primaryText;
+    text-shadow:none;
+    opacity:1
+  }
+  40%{
+    transform: translate(-300px,-500px);
+  }
+  80%{
+    transform: translate(0) scale(2);
+    color: rgba(13, 102, 54,0.60);color: rgba(13, 102, 54,0.60);
+    text-shadow:2px solid goldenrod;
+  }
+  100%{
+    transform: translate(0) scale(1);
+    color:$primaryText;
+    text-shadow:none;
+    opacity:1
+  }
+}
+
+@keyframes flyIn4 {
+  0%{
+    transform: translate(-400px,-1000px);
+    color:$primaryText;
+    text-shadow:none;
+    opacity:1
+  }
+  40%{
+    transform: translate(-200px,-500px);
+  }
+  80%{
+    transform: translate(0) scale(2);
+    color: rgba(13, 102, 54,0.60);
+    text-shadow:2px solid goldenrod;
+  }
+  100%{
+    transform: translate(1px,1px) scale(1);
+    color:$primaryText;
+    text-shadow:none;
+    opacity:1
+  }
+}
+
+@keyframes flyIn5 {
+  0%{
+    transform: translate(-200px,-1000px);
+    color:$primaryText;
+    text-shadow:none;
+    opacity:1
+  }
+  40%{
+    transform: translate(-100px,-500px);
+  }
+  80%{
+    transform: translate(0) scale(2);
+    color: rgba(13, 102, 54,0.60);
+    text-shadow:2px solid goldenrod;
+  }
+  100%{
+    transform: translate(0) scale(1);
+    color:$primaryText;
+    text-shadow:none;
+    opacity:1
+  }
+}
+
+@keyframes flyIn6 {
+  0%{
+    transform: translate(1px,-1000px);
+    color:$primaryText;
+    text-shadow:none;
+    opacity:1
+  }
+  40%{
+    transform: translate(1px,-500px);
+  }
+  80%{
+    transform: translate(1px) scale(2);
+    color: rgba(13, 102, 54,0.60);
+    text-shadow:2px solid goldenrod;
+  }
+  100%{
+    transform: translate(0) scale(1);
+    color:$primaryText;
+    text-shadow:none;
+    opacity:1
+  }
+}
+
+@keyframes flyIn7 {
+  0%{
+    transform: translate(200px,-1000px);
+    color:$primaryText;
+    text-shadow:none;
+    opacity:1
+  }
+  40%{
+    transform: translate(100px,-500px);
+  }
+  80%{
+    transform: translate(0) scale(2);
+    color: rgba(13, 102, 54,0.60);
+    text-shadow:2px solid goldenrod;
+  }
+  100%{
+    transform: translate(0) scale(1);
+    color:$primaryText;
+    text-shadow:none;
+    opacity:1
+  }
+}
+
+@keyframes flyIn8 {
+  0%{
+    transform: translate(400px,-1000px);
+    color:$primaryText;
+    text-shadow:none;
+    opacity:1
+  }
+  40%{
+    transform: translate(200px,-500px);
+  }
+  80%{
+    transform: translate(0) scale(2);
+    color: rgba(13, 102, 54,0.60);
+    text-shadow:2px solid goldenrod;
+  }
+  100%{
+    transform: translate(0) scale(1);
+    color:$primaryText;
+    text-shadow:none;
+    opacity:1
+  }
+}
+
+@keyframes flyIn9 {
+  0%{
+    transform: translate(600px,-1000px);
+    color:$primaryText;
+    text-shadow:none;
+    opacity:1
+  }
+  40%{
+    transform: translate(300px,-500px);
+  }
+  80%{
+    transform: translate(0) scale(2);
+    color: rgba(13, 102, 54,0.60);
+    text-shadow:2px solid goldenrod;
+  }
+  100%{
+    transform: translate(0) scale(1);
+    color:$primaryText;
+    text-shadow:none;
+    opacity:1
+  }
+}
+
+@keyframes flyIn10 {
+  0%{
+    transform: translate(800px,-1000px);
+    color:$primaryText;
+    text-shadow:none;
+    opacity:1
+  }
+  40%{
+    transform: translate(400px,-500px);
+  }
+  80%{
+    transform: translate(0) scale(2);
+    color: rgba(13, 102, 54,0.60);
+    text-shadow:2px solid goldenrod;
+  }
+  100%{
+    transform: translate(0) scale(1);
+    color:$primaryText;
+    text-shadow:none;
+    opacity:1
+  }
+}
+

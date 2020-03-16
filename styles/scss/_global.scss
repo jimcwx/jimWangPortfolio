@@ -3,15 +3,14 @@ html {
 }
 
 body {
-  background: linear-gradient(270deg, #efd597, #f3dfb1);
-  background-size: 400% 400%;
-  animation: background 11s ease infinite;
   color:$primaryText;
 }
 
 .wrapper {
   max-width:1170px;
   margin: 0 auto;
+  padding: 10px 100px 10px 100px;
+  box-shadow: 5px 0 5px $secondaryText, -5px 0 5px $secondaryText;
 }
 
 ul {
@@ -35,17 +34,11 @@ nav a {
 }
 
 .knees {
-      color: crimson;
+      color: rgba(13, 102, 54,0.70);
     }
     .too {
-      color: blue;
+      color: rgba(13, 102, 54, 0.85);
     }
     .sharp {
-      color:green;
+      color: rgb(13, 102, 54);
     }
-
-@keyframes background {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
