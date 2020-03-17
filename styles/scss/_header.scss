@@ -9,7 +9,7 @@ header {
     height: 100%;
     padding: 10px 100px 10px 100px;
     @include flex(column);
-
+    position:relative;
     .topBar {
       height: 10%;
       // I like numbers with 3 zeros
@@ -31,6 +31,20 @@ header {
         font-size: 3rem;
         margin:0px 0px 5px 0px;
       }
+    }
+
+    .scrollDownArrow {
+      max-width:50px;
+      position:absolute;
+      bottom: 20px;
+      left: calc(50% - 25px);
+      animation: bob 0.5s ease-out infinite;
+    }
+
+    .scrollDownArrow:hover,
+    .scrollDownArrow:focus {
+      cursor:pointer;
+      outline: 1px solid $primaryBackground;
     }
   }
 
@@ -462,5 +476,17 @@ header {
     transform:scale(6);
     opacity:0.4;
     z-index:0;
+  }
+}
+
+@keyframes bob {
+  0%{
+    transform:translateY(0px);
+  }
+  50%{
+    transform:translateY(10px);
+  }
+  100%{
+    transform:translateY(0px);
   }
 }

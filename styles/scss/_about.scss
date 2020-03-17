@@ -1,4 +1,27 @@
 .about {
-  padding-top: 100px;
-  background:$primaryBackground;
+  padding-top: 50px;
+  background:$thirdBackground;
+
+  .wrapper {
+    @include flex(row);
+    background: $secondaryBackground;
+    img {
+      object-fit:contain;
+      max-width:300px;
+      
+      position:relative;
+      top:20px;
+      right:5%;
+    }
+    .text {
+      text-align:left;
+      padding: 12%;
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
 }

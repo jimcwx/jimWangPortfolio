@@ -29,17 +29,13 @@
       transition: all 0.5s;
     }
 
-    li:hover,
-    li:focus {
+    a:focus,
+    a:hover {
+      display: inline-block;
       transform:scale(1.3);
-    }
-
-    li:hover a,
-    li:focus a {
-      outline: 1px solid $thirdBackground;
+      outline:1px solid $thirdBackground;
       background: $primaryText;
       color: $primaryBackground;
-      text-shadow:none;
     }
   }
 
