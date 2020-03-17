@@ -241,16 +241,15 @@ html {
 }
 
 body {
-  color: #1A2318;
+  color: #0d2e63;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .wrapper {
   max-width: 1170px;
   margin: 0 auto;
   padding: 10px 100px 10px 100px;
-  -webkit-box-shadow: 5px 0 5px #140D03, -5px 0 5px #140D03;
-          box-shadow: 5px 0 5px #140D03, -5px 0 5px #140D03;
 }
 
 ul {
@@ -259,11 +258,11 @@ ul {
 }
 
 h1, h2, h3, .topBar span {
-  font-family: 'Crete Round', serif;
+  font-family: 'Bebas Neue';
 }
 
 p, li, a {
-  font-family: 'Baloo Chettan 2', cursive;
+  font-family: 'Saira Extra Condensed', sans-serif;
 }
 
 nav a {
@@ -272,15 +271,18 @@ nav a {
 }
 
 .knees {
-  color: rgba(13, 102, 54, 0.7);
+  color: #d5eaef;
+  text-shadow: 1px 1px #0d2e63;
 }
 
 .too {
-  color: rgba(13, 102, 54, 0.85);
+  color: #d5eaef;
+  text-shadow: 1px 1px #0d2e63;
 }
 
 .sharp {
-  color: #0d6636;
+  color: #d5eaef;
+  text-shadow: 1px 1px #0d2e63;
 }
 
 .topBar {
@@ -297,6 +299,12 @@ nav a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.topBar img {
+  max-width: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .topBar nav ul {
@@ -321,17 +329,16 @@ nav a {
 }
 
 .topBar nav ul li a {
-  color: #140D03;
+  color: #0d2e63;
   margin: 10px;
-  padding: 5px;
+  padding: 2px 5px 2px 5px;
   font-weight: bold;
-  text-shadow: 2px 2px #DBDACD;
-  font-size: 1.2rem;
-  border: 0 solid #1A2318;
-  border-bottom: 1px solid #1A2318;
-  background: inherit;
+  font-size: 1.4rem;
+  outline: 0 solid #0d2e63;
+  position: relative;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  z-index: 1000;
 }
 
 .topBar nav ul li:hover,
@@ -343,8 +350,8 @@ nav a {
 .topBar nav ul li:hover a,
 .topBar nav ul li:focus a {
   outline: 1px solid #DBDACD;
-  background: #1A2318;
-  color: #f3f0e9;
+  background: #0d2e63;
+  color: #d5eaef;
   text-shadow: none;
 }
 
@@ -360,12 +367,15 @@ nav a {
 
 header {
   height: 100vh;
-  background-color: #414040;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 28, 35, 0.267)), to(rgba(8, 28, 35, 0))), url("../../assets/background.jpg");
+  background: linear-gradient(to bottom, rgba(8, 28, 35, 0.267), rgba(8, 28, 35, 0)), url("../../assets/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
 }
 
 header .wrapper {
   height: 100%;
-  background: #f3f0e9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -376,7 +386,8 @@ header .wrapper {
 }
 
 header .wrapper .topBar {
-  height: 5%;
+  height: 10%;
+  z-index: 1000;
 }
 
 header .wrapper .text {
@@ -394,6 +405,9 @@ header .wrapper .text {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  bottom: 10%;
+  z-index: 0;
 }
 
 header .wrapper .text h1 {
@@ -403,6 +417,7 @@ header .wrapper .text h1 {
 
 header .wrapper .text h2 {
   font-size: 3rem;
+  margin: 30px 0px 5px 0px;
 }
 
 header .firstLine span {
@@ -411,7 +426,7 @@ header .firstLine span {
 
 header .firstLine span.firstWord {
   opacity: 0;
-  color: #1A2318;
+  color: #0d2e63;
   -webkit-animation: flashIn 0.5s ease 0.5s;
           animation: flashIn 0.5s ease 0.5s;
   -webkit-animation-fill-mode: forwards;
@@ -420,7 +435,7 @@ header .firstLine span.firstWord {
 
 header .firstLine span.secondWord {
   opacity: 0;
-  color: #1A2318;
+  color: #0d2e63;
   -webkit-animation: flashIn 0.5s ease 0.7s;
           animation: flashIn 0.5s ease 0.7s;
   -webkit-animation-fill-mode: forwards;
@@ -429,7 +444,7 @@ header .firstLine span.secondWord {
 
 header .firstLine span.thirdWord {
   opacity: 0;
-  color: #1A2318;
+  color: #0d2e63;
   -webkit-animation: flashIn 0.5s ease 1s;
           animation: flashIn 0.5s ease 1s;
   -webkit-animation-fill-mode: forwards;
@@ -438,7 +453,7 @@ header .firstLine span.thirdWord {
 
 header .firstLine span.fourthWord {
   opacity: 0;
-  color: #1A2318;
+  color: #0d2e63;
   -webkit-animation: flashIn 0.5s ease 1.3s;
           animation: flashIn 0.5s ease 1.3s;
   -webkit-animation-fill-mode: forwards;
@@ -458,15 +473,15 @@ header .mainLine .knees {
 }
 
 header .mainLine .too {
-  -webkit-animation: wiggleIn 0.7s ease 2.5s;
-          animation: wiggleIn 0.7s ease 2.5s;
+  -webkit-animation: wiggleIn 0.7s ease 2.2s;
+          animation: wiggleIn 0.7s ease 2.2s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
 header .mainLine .sharp {
-  -webkit-animation: wiggleIn 0.7s ease 3.1s;
-          animation: wiggleIn 0.7s ease 3.1s;
+  -webkit-animation: wiggleIn 0.7s ease 2.5s;
+          animation: wiggleIn 0.7s ease 2.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -477,81 +492,88 @@ header .mainLine .letter {
 }
 
 header .mainLine .firstWord .letter2 {
-  -webkit-animation: flyIn1 1s ease 3.7s;
-          animation: flyIn1 1s ease 3.7s;
+  -webkit-animation: flyIn1 1s ease 3s;
+          animation: flyIn1 1s ease 3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
 header .mainLine .firstWord .letter3 {
-  -webkit-animation: flyIn2 1s ease 3.9s;
-          animation: flyIn2 1s ease 3.9s;
+  -webkit-animation: flyIn2 1s ease 3.1s;
+          animation: flyIn2 1s ease 3.1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
 header .mainLine .firstWord .letter4 {
-  -webkit-animation: flyIn3 1s ease 4.1s;
-          animation: flyIn3 1s ease 4.1s;
+  -webkit-animation: flyIn3 1s ease 3.2s;
+          animation: flyIn3 1s ease 3.2s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
 header .mainLine .firstWord .letter5 {
-  -webkit-animation: flyIn4 1s ease 4.3s;
-          animation: flyIn4 1s ease 4.3s;
+  -webkit-animation: flyIn4 1s ease 3.3s;
+          animation: flyIn4 1s ease 3.3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
 header .mainLine .secondWord .letter2 {
-  -webkit-animation: flyIn5 1s ease 4.5s;
-          animation: flyIn5 1s ease 4.5s;
+  -webkit-animation: flyIn5 1s ease 3.4s;
+          animation: flyIn5 1s ease 3.4s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
 header .mainLine .secondWord .letter3 {
-  -webkit-animation: flyIn6 1s ease 4.7s;
-          animation: flyIn6 1s ease 4.7s;
+  -webkit-animation: flyIn6 1s ease 3.5s;
+          animation: flyIn6 1s ease 3.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
 header .mainLine .thirdWord .letter2 {
-  -webkit-animation: flyIn7 1s ease 4.9s;
-          animation: flyIn7 1s ease 4.9s;
+  -webkit-animation: flyIn7 1s ease 3.6s;
+          animation: flyIn7 1s ease 3.6s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
 header .mainLine .thirdWord .letter3 {
-  -webkit-animation: flyIn8 1s ease 5.1s;
-          animation: flyIn8 1s ease 5.1s;
+  -webkit-animation: flyIn8 1s ease 3.7s;
+          animation: flyIn8 1s ease 3.7s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
 header .mainLine .thirdWord .letter4 {
-  -webkit-animation: flyIn9 1s ease 5.3s;
-          animation: flyIn9 1s ease 5.3s;
+  -webkit-animation: flyIn9 1s ease 3.8s;
+          animation: flyIn9 1s ease 3.8s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
 header .mainLine .thirdWord .letter5 {
-  -webkit-animation: flyIn10 1s ease 5.5s;
-          animation: flyIn10 1s ease 5.5s;
+  -webkit-animation: flyIn10 1s ease 3.9s;
+          animation: flyIn10 1s ease 3.9s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
-header h2.thirdLine {
+header img.thirdLine {
   opacity: 0;
-  -webkit-animation: hireMe 3s linear 7s;
-          animation: hireMe 3s linear 7s;
+  -webkit-animation: hireMe 1s linear 4.2s;
+          animation: hireMe 1s linear 4.2s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 200px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: scale(6);
+          transform: scale(6);
 }
 
 @-webkit-keyframes flashIn {
@@ -565,7 +587,7 @@ header h2.thirdLine {
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);
-    color: #1A2318;
+    color: #0d2e63;
     text-shadow: none;
     opacity: 1;
   }
@@ -582,7 +604,7 @@ header h2.thirdLine {
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);
-    color: #1A2318;
+    color: #0d2e63;
     text-shadow: none;
     opacity: 1;
   }
@@ -617,6 +639,7 @@ header h2.thirdLine {
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);
+    text-shadow: 0 0 6px #0d2e63ce;
     opacity: 1;
   }
 }
@@ -650,6 +673,7 @@ header h2.thirdLine {
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);
+    text-shadow: 0 0 6px #0d2e63ce;
     opacity: 1;
   }
 }
@@ -658,7 +682,7 @@ header h2.thirdLine {
   0% {
     -webkit-transform: translate(-1000px, -1000px);
             transform: translate(-1000px, -1000px);
-    color: #1A2318;
+    color: #0d2e63;
     text-shadow: none;
     opacity: 1;
   }
@@ -669,14 +693,14 @@ header h2.thirdLine {
   80% {
     -webkit-transform: translate(0) scale(2);
             transform: translate(0) scale(2);
-    color: rgba(13, 102, 54, 0.6);
+    color: #275c90;
     text-shadow: 2px solid goldenrod;
   }
   100% {
     -webkit-transform: translate(0) scale(1);
             transform: translate(0) scale(1);
-    color: #1A2318;
-    text-shadow: none;
+    color: #d5eaef;
+    text-shadow: 0 0 6px #0d2e63ce;
     opacity: 1;
   }
 }
@@ -685,7 +709,7 @@ header h2.thirdLine {
   0% {
     -webkit-transform: translate(-1000px, -1000px);
             transform: translate(-1000px, -1000px);
-    color: #1A2318;
+    color: #0d2e63;
     text-shadow: none;
     opacity: 1;
   }
@@ -696,14 +720,14 @@ header h2.thirdLine {
   80% {
     -webkit-transform: translate(0) scale(2);
             transform: translate(0) scale(2);
-    color: rgba(13, 102, 54, 0.6);
+    color: #275c90;
     text-shadow: 2px solid goldenrod;
   }
   100% {
     -webkit-transform: translate(0) scale(1);
             transform: translate(0) scale(1);
-    color: #1A2318;
-    text-shadow: none;
+    color: #d5eaef;
+    text-shadow: 0 0 6px #0d2e63ce;
     opacity: 1;
   }
 }
@@ -714,7 +738,7 @@ header h2.thirdLine {
             transform: translate(0) scale(2);
     -webkit-transform: translate(-800px, -1000px);
             transform: translate(-800px, -1000px);
-    color: #1A2318;
+    color: #0d2e63;
     text-shadow: none;
     opacity: 1;
   }
@@ -725,14 +749,14 @@ header h2.thirdLine {
   80% {
     -webkit-transform: translate(0) scale(2);
             transform: translate(0) scale(2);
-    color: rgba(13, 102, 54, 0.6);
-    text-shadow: 2px solid #1A2318;
+    color: #275c90;
+    text-shadow: 2px solid #0d2e63;
   }
   100% {
     -webkit-transform: translate(0) scale(1);
             transform: translate(0) scale(1);
-    color: #1A2318;
-    text-shadow: none;
+    color: #d5eaef;
+    text-shadow: 0 0 6px #0d2e63ce;
     opacity: 1;
   }
 }
@@ -743,7 +767,7 @@ header h2.thirdLine {
             transform: translate(0) scale(2);
     -webkit-transform: translate(-800px, -1000px);
             transform: translate(-800px, -1000px);
-    color: #1A2318;
+    color: #0d2e63;
     text-shadow: none;
     opacity: 1;
   }
@@ -754,14 +778,14 @@ header h2.thirdLine {
   80% {
     -webkit-transform: translate(0) scale(2);
             transform: translate(0) scale(2);
-    color: rgba(13, 102, 54, 0.6);
-    text-shadow: 2px solid #1A2318;
+    color: #275c90;
+    text-shadow: 2px solid #0d2e63;
   }
   100% {
     -webkit-transform: translate(0) scale(1);
             transform: translate(0) scale(1);
-    color: #1A2318;
-    text-shadow: none;
+    color: #d5eaef;
+    text-shadow: 0 0 6px #0d2e63ce;
     opacity: 1;
   }
 }
@@ -770,7 +794,7 @@ header h2.thirdLine {
   0% {
     -webkit-transform: translate(-600px, -1000px);
             transform: translate(-600px, -1000px);
-    color: #1A2318;
+    color: #0d2e63;
     text-shadow: none;
     opacity: 1;
   }
@@ -781,15 +805,14 @@ header h2.thirdLine {
   80% {
     -webkit-transform: translate(0) scale(2);
             transform: translate(0) scale(2);
-    color: rgba(13, 102, 54, 0.6);
-    color: rgba(13, 102, 54, 0.6);
+    color: #275c90;
     text-shadow: 2px solid goldenrod;
   }
   100% {
     -webkit-transform: translate(0) scale(1);
             transform: translate(0) scale(1);
-    color: #1A2318;
-    text-shadow: none;
+    color: #d5eaef;
+    text-shadow: 0 0 6px #0d2e63ce;
     opacity: 1;
   }
 }
@@ -798,7 +821,7 @@ header h2.thirdLine {
   0% {
     -webkit-transform: translate(-600px, -1000px);
             transform: translate(-600px, -1000px);
-    color: #1A2318;
+    color: #0d2e63;
     text-shadow: none;
     opacity: 1;
   }
@@ -809,15 +832,14 @@ header h2.thirdLine {
   80% {
     -webkit-transform: translate(0) scale(2);
             transform: translate(0) scale(2);
-    color: rgba(13, 102, 54, 0.6);
-    color: rgba(13, 102, 54, 0.6);
+    color: #275c90;
     text-shadow: 2px solid goldenrod;
   }
   100% {
     -webkit-transform: translate(0) scale(1);
             transform: translate(0) scale(1);
-    color: #1A2318;
-    text-shadow: none;
+    color: #d5eaef;
+    text-shadow: 0 0 6px #0d2e63ce;
     opacity: 1;
   }
 }
@@ -826,7 +848,7 @@ header h2.thirdLine {
   0% {
     -webkit-transform: translate(-400px, -1000px);
             transform: translate(-400px, -1000px);
-    color: #1A2318;
+    color: #0d2e63;
     text-shadow: none;
     opacity: 1;
   }
@@ -837,14 +859,14 @@ header h2.thirdLine {
   80% {
     -webkit-transform: translate(0) scale(2);
             transform: translate(0) scale(2);
-    color: rgba(13, 102, 54, 0.6);
+    color: #275c90;
     text-shadow: 2px solid goldenrod;
   }
   100% {
     -webkit-transform: translate(1px, 1px) scale(1);
             transform: translate(1px, 1px) scale(1);
-    color: #1A2318;
-    text-shadow: none;
+    color: #d5eaef;
+    text-shadow: 0 0 6px #0d2e63ce;
     opacity: 1;
   }
 }
@@ -853,7 +875,7 @@ header h2.thirdLine {
   0% {
     -webkit-transform: translate(-400px, -1000px);
             transform: translate(-400px, -1000px);
-    color: #1A2318;
+    color: #0d2e63;
     text-shadow: none;
     opacity: 1;
   }
@@ -864,14 +886,14 @@ header h2.thirdLine {
   80% {
     -webkit-transform: translate(0) scale(2);
             transform: translate(0) scale(2);
-    color: rgba(13, 102, 54, 0.6);
+    color: #275c90;
     text-shadow: 2px solid goldenrod;
   }
   100% {
     -webkit-transform: translate(1px, 1px) scale(1);
             transform: translate(1px, 1px) scale(1);
-    color: #1A2318;
-    text-shadow: none;
+    color: #d5eaef;
+    text-shadow: 0 0 6px #0d2e63ce;
     opacity: 1;
   }
 }
@@ -880,7 +902,7 @@ header h2.thirdLine {
   0% {
     -webkit-transform: translate(-200px, -1000px);
             transform: translate(-200px, -1000px);
-    color: #1A2318;
+    color: #0d2e63;
     text-shadow: none;
     opacity: 1;
   }
@@ -891,14 +913,14 @@ header h2.thirdLine {
   80% {
     -webkit-transform: translate(0) scale(2);
             transform: translate(0) scale(2);
-    color: rgba(13, 102, 54, 0.6);
+    color: #275c90;
     text-shadow: 2px solid goldenrod;
   }
   100% {
     -webkit-transform: translate(0) scale(1);
             transform: translate(0) scale(1);
-    color: #1A2318;
-    text-shadow: none;
+    color: #d5eaef;
+    text-shadow: 0 0 6px #0d2e63ce;
     opacity: 1;
   }
 }
@@ -907,7 +929,7 @@ header h2.thirdLine {
   0% {
     -webkit-transform: translate(-200px, -1000px);
             transform: translate(-200px, -1000px);
-    color: #1A2318;
+    color: #0d2e63;
     text-shadow: none;
     opacity: 1;
   }
@@ -918,14 +940,14 @@ header h2.thirdLine {
   80% {
     -webkit-transform: translate(0) scale(2);
             transform: translate(0) scale(2);
-    color: rgba(13, 102, 54, 0.6);
+    color: #275c90;
     text-shadow: 2px solid goldenrod;
   }
   100% {
     -webkit-transform: translate(0) scale(1);
             transform: translate(0) scale(1);
-    color: #1A2318;
-    text-shadow: none;
+    color: #d5eaef;
+    text-shadow: 0 0 6px #0d2e63ce;
     opacity: 1;
   }
 }
@@ -934,7 +956,7 @@ header h2.thirdLine {
   0% {
     -webkit-transform: translate(1px, -1000px);
             transform: translate(1px, -1000px);
-    color: #1A2318;
+    color: #0d2e63;
     text-shadow: none;
     opacity: 1;
   }
@@ -945,14 +967,14 @@ header h2.thirdLine {
   80% {
     -webkit-transform: translate(1px) scale(2);
             transform: translate(1px) scale(2);
-    color: rgba(13, 102, 54, 0.6);
+    color: #275c90;
     text-shadow: 2px solid goldenrod;
   }
   100% {
     -webkit-transform: translate(0) scale(1);
             transform: translate(0) scale(1);
-    color: #1A2318;
-    text-shadow: none;
+    color: #d5eaef;
+    text-shadow: 0 0 6px #0d2e63ce;
     opacity: 1;
   }
 }
@@ -961,7 +983,7 @@ header h2.thirdLine {
   0% {
     -webkit-transform: translate(1px, -1000px);
             transform: translate(1px, -1000px);
-    color: #1A2318;
+    color: #0d2e63;
     text-shadow: none;
     opacity: 1;
   }
@@ -972,14 +994,14 @@ header h2.thirdLine {
   80% {
     -webkit-transform: translate(1px) scale(2);
             transform: translate(1px) scale(2);
-    color: rgba(13, 102, 54, 0.6);
+    color: #275c90;
     text-shadow: 2px solid goldenrod;
   }
   100% {
     -webkit-transform: translate(0) scale(1);
             transform: translate(0) scale(1);
-    color: #1A2318;
-    text-shadow: none;
+    color: #d5eaef;
+    text-shadow: 0 0 6px #0d2e63ce;
     opacity: 1;
   }
 }
@@ -988,7 +1010,7 @@ header h2.thirdLine {
   0% {
     -webkit-transform: translate(200px, -1000px);
             transform: translate(200px, -1000px);
-    color: #1A2318;
+    color: #0d2e63;
     text-shadow: none;
     opacity: 1;
   }
@@ -999,14 +1021,14 @@ header h2.thirdLine {
   80% {
     -webkit-transform: translate(0) scale(2);
             transform: translate(0) scale(2);
-    color: rgba(13, 102, 54, 0.6);
+    color: #275c90;
     text-shadow: 2px solid goldenrod;
   }
   100% {
     -webkit-transform: translate(0) scale(1);
             transform: translate(0) scale(1);
-    color: #1A2318;
-    text-shadow: none;
+    color: #d5eaef;
+    text-shadow: 0 0 6px #0d2e63ce;
     opacity: 1;
   }
 }
@@ -1015,7 +1037,7 @@ header h2.thirdLine {
   0% {
     -webkit-transform: translate(200px, -1000px);
             transform: translate(200px, -1000px);
-    color: #1A2318;
+    color: #0d2e63;
     text-shadow: none;
     opacity: 1;
   }
@@ -1026,14 +1048,14 @@ header h2.thirdLine {
   80% {
     -webkit-transform: translate(0) scale(2);
             transform: translate(0) scale(2);
-    color: rgba(13, 102, 54, 0.6);
+    color: #275c90;
     text-shadow: 2px solid goldenrod;
   }
   100% {
     -webkit-transform: translate(0) scale(1);
             transform: translate(0) scale(1);
-    color: #1A2318;
-    text-shadow: none;
+    color: #d5eaef;
+    text-shadow: 0 0 6px #0d2e63ce;
     opacity: 1;
   }
 }
@@ -1042,7 +1064,7 @@ header h2.thirdLine {
   0% {
     -webkit-transform: translate(400px, -1000px);
             transform: translate(400px, -1000px);
-    color: #1A2318;
+    color: #0d2e63;
     text-shadow: none;
     opacity: 1;
   }
@@ -1053,14 +1075,14 @@ header h2.thirdLine {
   80% {
     -webkit-transform: translate(0) scale(2);
             transform: translate(0) scale(2);
-    color: rgba(13, 102, 54, 0.6);
+    color: #275c90;
     text-shadow: 2px solid goldenrod;
   }
   100% {
     -webkit-transform: translate(0) scale(1);
             transform: translate(0) scale(1);
-    color: #1A2318;
-    text-shadow: none;
+    color: #d5eaef;
+    text-shadow: 0 0 6px #0d2e63ce;
     opacity: 1;
   }
 }
@@ -1069,7 +1091,7 @@ header h2.thirdLine {
   0% {
     -webkit-transform: translate(400px, -1000px);
             transform: translate(400px, -1000px);
-    color: #1A2318;
+    color: #0d2e63;
     text-shadow: none;
     opacity: 1;
   }
@@ -1080,14 +1102,14 @@ header h2.thirdLine {
   80% {
     -webkit-transform: translate(0) scale(2);
             transform: translate(0) scale(2);
-    color: rgba(13, 102, 54, 0.6);
+    color: #275c90;
     text-shadow: 2px solid goldenrod;
   }
   100% {
     -webkit-transform: translate(0) scale(1);
             transform: translate(0) scale(1);
-    color: #1A2318;
-    text-shadow: none;
+    color: #d5eaef;
+    text-shadow: 0 0 6px #0d2e63ce;
     opacity: 1;
   }
 }
@@ -1096,7 +1118,7 @@ header h2.thirdLine {
   0% {
     -webkit-transform: translate(600px, -1000px);
             transform: translate(600px, -1000px);
-    color: #1A2318;
+    color: #0d2e63;
     text-shadow: none;
     opacity: 1;
   }
@@ -1107,14 +1129,14 @@ header h2.thirdLine {
   80% {
     -webkit-transform: translate(0) scale(2);
             transform: translate(0) scale(2);
-    color: rgba(13, 102, 54, 0.6);
+    color: #275c90;
     text-shadow: 2px solid goldenrod;
   }
   100% {
     -webkit-transform: translate(0) scale(1);
             transform: translate(0) scale(1);
-    color: #1A2318;
-    text-shadow: none;
+    color: #d5eaef;
+    text-shadow: 0 0 6px #0d2e63ce;
     opacity: 1;
   }
 }
@@ -1123,7 +1145,7 @@ header h2.thirdLine {
   0% {
     -webkit-transform: translate(600px, -1000px);
             transform: translate(600px, -1000px);
-    color: #1A2318;
+    color: #0d2e63;
     text-shadow: none;
     opacity: 1;
   }
@@ -1134,14 +1156,14 @@ header h2.thirdLine {
   80% {
     -webkit-transform: translate(0) scale(2);
             transform: translate(0) scale(2);
-    color: rgba(13, 102, 54, 0.6);
+    color: #275c90;
     text-shadow: 2px solid goldenrod;
   }
   100% {
     -webkit-transform: translate(0) scale(1);
             transform: translate(0) scale(1);
-    color: #1A2318;
-    text-shadow: none;
+    color: #d5eaef;
+    text-shadow: 0 0 6px #0d2e63ce;
     opacity: 1;
   }
 }
@@ -1150,7 +1172,7 @@ header h2.thirdLine {
   0% {
     -webkit-transform: translate(800px, -1000px);
             transform: translate(800px, -1000px);
-    color: #1A2318;
+    color: #0d2e63;
     text-shadow: none;
     opacity: 1;
   }
@@ -1161,14 +1183,14 @@ header h2.thirdLine {
   80% {
     -webkit-transform: translate(0) scale(2);
             transform: translate(0) scale(2);
-    color: rgba(13, 102, 54, 0.6);
+    color: #275c90;
     text-shadow: 2px solid goldenrod;
   }
   100% {
     -webkit-transform: translate(0) scale(1);
             transform: translate(0) scale(1);
-    color: #1A2318;
-    text-shadow: none;
+    color: #d5eaef;
+    text-shadow: 0 0 6px #0d2e63ce;
     opacity: 1;
   }
 }
@@ -1177,7 +1199,7 @@ header h2.thirdLine {
   0% {
     -webkit-transform: translate(800px, -1000px);
             transform: translate(800px, -1000px);
-    color: #1A2318;
+    color: #0d2e63;
     text-shadow: none;
     opacity: 1;
   }
@@ -1188,14 +1210,14 @@ header h2.thirdLine {
   80% {
     -webkit-transform: translate(0) scale(2);
             transform: translate(0) scale(2);
-    color: rgba(13, 102, 54, 0.6);
+    color: #275c90;
     text-shadow: 2px solid goldenrod;
   }
   100% {
     -webkit-transform: translate(0) scale(1);
             transform: translate(0) scale(1);
-    color: #1A2318;
-    text-shadow: none;
+    color: #d5eaef;
+    text-shadow: 0 0 6px #0d2e63ce;
     opacity: 1;
   }
 }
@@ -1205,53 +1227,20 @@ header h2.thirdLine {
     -webkit-transform: scale(1);
             transform: scale(1);
     opacity: 1;
-    color: #DBDACD;
-    text-shadow: 2px 2px black;
-  }
-  25% {
-    -webkit-transform: scale(10);
-            transform: scale(10);
-    color: #DBDACD;
-    text-shadow: 2px 2px black;
-  }
-  50% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    color: #1A2318;
-    text-shadow: none;
-  }
-  60% {
-    -webkit-transform: translateY(-70px);
-            transform: translateY(-70px);
-  }
-  65% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    z-index: 10;
   }
   75% {
-    -webkit-transform: translateY(-40px);
-            transform: translateY(-40px);
-  }
-  80% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-  85% {
-    -webkit-transform: translateY(-25px);
-            transform: translateY(-25px);
-  }
-  90% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-  95% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    -webkit-transform: scale(7);
+            transform: scale(7);
+    color: #0d2e63;
+    text-shadow: none;
+    z-index: 10;
   }
   100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-    opacity: 1;
+    -webkit-transform: scale(6);
+            transform: scale(6);
+    opacity: 0.3;
+    z-index: 0;
   }
 }
 
@@ -1260,52 +1249,19 @@ header h2.thirdLine {
     -webkit-transform: scale(1);
             transform: scale(1);
     opacity: 1;
-    color: #DBDACD;
-    text-shadow: 2px 2px black;
-  }
-  25% {
-    -webkit-transform: scale(10);
-            transform: scale(10);
-    color: #DBDACD;
-    text-shadow: 2px 2px black;
-  }
-  50% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    color: #1A2318;
-    text-shadow: none;
-  }
-  60% {
-    -webkit-transform: translateY(-70px);
-            transform: translateY(-70px);
-  }
-  65% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    z-index: 10;
   }
   75% {
-    -webkit-transform: translateY(-40px);
-            transform: translateY(-40px);
-  }
-  80% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-  85% {
-    -webkit-transform: translateY(-25px);
-            transform: translateY(-25px);
-  }
-  90% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-  95% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    -webkit-transform: scale(7);
+            transform: scale(7);
+    color: #0d2e63;
+    text-shadow: none;
+    z-index: 10;
   }
   100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-    opacity: 1;
+    -webkit-transform: scale(6);
+            transform: scale(6);
+    opacity: 0.3;
+    z-index: 0;
   }
 }

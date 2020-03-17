@@ -3,6 +3,10 @@
   justify-content: space-between;
   align-items: center;
 
+  img{
+    max-width:100px;
+    object-fit:contain;
+  }
   // Nav Bar Stuff
   nav ul {
     @include flex(row);
@@ -10,16 +14,15 @@
 
     li {
       a {
-        color: $secondaryText;
+        color: $primaryText;
         margin: 10px;
-        padding: 5px;
+        padding: 2px 5px 2px 5px;
         font-weight: bold;
-        text-shadow: 2px 2px $thirdBackground;
-        font-size: 1.2rem;
-        border: 0 solid $primaryText;
-        border-bottom: 1px solid $primaryText;
-        background:inherit;
+        font-size: 1.4rem;
+        outline: 0 solid $primaryText;
+        position:relative;
         transition: all 0.5s;
+        z-index:1000;
       }
       background:inherit;
       transform:scale(1);

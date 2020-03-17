@@ -1,20 +1,26 @@
 header {
   height: 100vh;
-  background-color: rgb(65, 64, 64);
+  background: linear-gradient(to bottom, rgba(8, 28, 35, 0.267),rgba(8, 28, 35, 0)),url("../../assets/background.jpg");
+  background-position:center;
+  background-size:cover;
+  background-repeat:none;
 
   .wrapper {
     height: 100%;
-    background: #f3f0e9;
     @include flex(column);
 
     .topBar {
-      height: 5%;
+      height: 10%;
+      // I like numbers with 3 zeros
+      z-index:1000;
     }
 
     .text {
       height: 90%;
       @include flexCenter(column);
-
+      position:relative;
+      bottom:10%;
+      z-index:0;
       h1 {
         font-size: 5rem;
         margin: 10px;
@@ -22,6 +28,7 @@ header {
 
       h2 {
         font-size: 3rem;
+        margin:30px 0px 5px 0px;
       }
     }
   }
@@ -72,11 +79,11 @@ header {
       animation-fill-mode:forwards;
     }
     .too {
-      animation: wiggleIn 0.7s ease 2.5s;
+      animation: wiggleIn 0.7s ease 2.2s;
       animation-fill-mode:forwards;
     }
     .sharp {
-      animation: wiggleIn 0.7s ease 3.1s;
+      animation: wiggleIn 0.7s ease 2.5s;
       animation-fill-mode:forwards;
     }
 
@@ -87,58 +94,63 @@ header {
 
     .firstWord {
       .letter2 {
-        animation: flyIn1 1s ease 3.7s;
+        animation: flyIn1 1s ease 3s;
         animation-fill-mode:forwards;
       }
       .letter3 {
-        animation: flyIn2 1s ease 3.9s;
+        animation: flyIn2 1s ease 3.1s;
         animation-fill-mode:forwards;
       }
       .letter4 {
-        animation: flyIn3 1s ease 4.1s;
+        animation: flyIn3 1s ease 3.2s;
         animation-fill-mode:forwards;
       }
       .letter5 {
-        animation: flyIn4 1s ease 4.3s;
+        animation: flyIn4 1s ease 3.3s;
         animation-fill-mode:forwards;
       }
     }
 
     .secondWord {
       .letter2 {
-        animation: flyIn5 1s ease 4.5s;
+        animation: flyIn5 1s ease 3.4s;
         animation-fill-mode:forwards;
       }
       .letter3 {
-        animation: flyIn6 1s ease 4.7s;
+        animation: flyIn6 1s ease 3.5s;
         animation-fill-mode:forwards;
       }
     }
 
     .thirdWord {
       .letter2 {
-        animation: flyIn7 1s ease 4.9s;
+        animation: flyIn7 1s ease 3.6s;
         animation-fill-mode:forwards;
       }
       .letter3 {
-        animation: flyIn8 1s ease 5.1s;
+        animation: flyIn8 1s ease 3.7s;
         animation-fill-mode:forwards;
       }
       .letter4 {
-        animation: flyIn9 1s ease 5.3s;
+        animation: flyIn9 1s ease 3.8s;
         animation-fill-mode:forwards;
       }
       .letter5 {
-        animation: flyIn10 1s ease 5.5s;
+        animation: flyIn10 1s ease 3.9s;
         animation-fill-mode:forwards;
       }
     }
   }
 
-  h2.thirdLine {
+  img.thirdLine {
     opacity:0;
-    animation: hireMe 3s linear 7s;
+    animation: hireMe 1s linear 4.2s;
     animation-fill-mode:forwards;
+    object-fit:cover;
+    max-width:200px;
+    position:absolute;
+    top:50%;
+    transform:scale(6);
   }
 }
 
@@ -180,6 +192,7 @@ header {
   }
   100%{
     transform:scale(1);
+    text-shadow:0 0 6px #0d2e63ce;
     opacity:1;
   }
 }
@@ -196,13 +209,13 @@ header {
   }
   80%{
     transform: translate(0) scale(2);
-    color: rgba(13, 102, 54,0.60);
+    color: $secondaryText;
     text-shadow:2px solid goldenrod;
   }
   100%{
     transform: translate(0) scale(1);
-    color:$primaryText;
-    text-shadow:none;
+    color:$primaryBackground;
+    text-shadow:0 0 6px #0d2e63ce;
     opacity:1
   }
 }
@@ -219,13 +232,13 @@ header {
   }
   80%{
     transform: translate(0) scale(2);
-    color: rgba(13, 102, 54,0.60);
+    color: $secondaryText;
     text-shadow:2px solid $primaryText;
   }
   100%{
     transform: translate(0) scale(1);
-    color:$primaryText;
-    text-shadow:none;
+    color:$primaryBackground;
+    text-shadow:0 0 6px #0d2e63ce;
     opacity:1
   }
 }
@@ -242,13 +255,13 @@ header {
   }
   80%{
     transform: translate(0) scale(2);
-    color: rgba(13, 102, 54,0.60);color: rgba(13, 102, 54,0.60);
+    color: $secondaryText;
     text-shadow:2px solid goldenrod;
   }
   100%{
     transform: translate(0) scale(1);
-    color:$primaryText;
-    text-shadow:none;
+    color:$primaryBackground;
+    text-shadow:0 0 6px #0d2e63ce;
     opacity:1
   }
 }
@@ -265,13 +278,13 @@ header {
   }
   80%{
     transform: translate(0) scale(2);
-    color: rgba(13, 102, 54,0.60);
+    color: $secondaryText;
     text-shadow:2px solid goldenrod;
   }
   100%{
     transform: translate(1px,1px) scale(1);
-    color:$primaryText;
-    text-shadow:none;
+    color:$primaryBackground;
+    text-shadow:0 0 6px #0d2e63ce;
     opacity:1
   }
 }
@@ -288,13 +301,13 @@ header {
   }
   80%{
     transform: translate(0) scale(2);
-    color: rgba(13, 102, 54,0.60);
+    color: $secondaryText;
     text-shadow:2px solid goldenrod;
   }
   100%{
     transform: translate(0) scale(1);
-    color:$primaryText;
-    text-shadow:none;
+    color:$primaryBackground;
+    text-shadow:0 0 6px #0d2e63ce;
     opacity:1
   }
 }
@@ -311,13 +324,13 @@ header {
   }
   80%{
     transform: translate(1px) scale(2);
-    color: rgba(13, 102, 54,0.60);
+    color: $secondaryText;
     text-shadow:2px solid goldenrod;
   }
   100%{
     transform: translate(0) scale(1);
-    color:$primaryText;
-    text-shadow:none;
+    color:$primaryBackground;
+    text-shadow:0 0 6px #0d2e63ce;
     opacity:1
   }
 }
@@ -334,13 +347,13 @@ header {
   }
   80%{
     transform: translate(0) scale(2);
-    color: rgba(13, 102, 54,0.60);
+    color: $secondaryText;
     text-shadow:2px solid goldenrod;
   }
   100%{
     transform: translate(0) scale(1);
-    color:$primaryText;
-    text-shadow:none;
+    color:$primaryBackground;
+    text-shadow:0 0 6px #0d2e63ce;
     opacity:1
   }
 }
@@ -357,13 +370,13 @@ header {
   }
   80%{
     transform: translate(0) scale(2);
-    color: rgba(13, 102, 54,0.60);
+    color: $secondaryText;
     text-shadow:2px solid goldenrod;
   }
   100%{
     transform: translate(0) scale(1);
-    color:$primaryText;
-    text-shadow:none;
+    color:$primaryBackground;
+    text-shadow:0 0 6px #0d2e63ce;
     opacity:1
   }
 }
@@ -380,13 +393,13 @@ header {
   }
   80%{
     transform: translate(0) scale(2);
-    color: rgba(13, 102, 54,0.60);
+    color: $secondaryText;
     text-shadow:2px solid goldenrod;
   }
   100%{
     transform: translate(0) scale(1);
-    color:$primaryText;
-    text-shadow:none;
+    color:$primaryBackground;
+    text-shadow:0 0 6px #0d2e63ce;
     opacity:1
   }
 }
@@ -403,13 +416,13 @@ header {
   }
   80%{
     transform: translate(0) scale(2);
-    color: rgba(13, 102, 54,0.60);
+    color: $secondaryText;
     text-shadow:2px solid goldenrod;
   }
   100%{
     transform: translate(0) scale(1);
-    color:$primaryText;
-    text-shadow:none;
+    color:$primaryBackground;
+    text-shadow:0 0 6px #0d2e63ce;
     opacity:1
   }
 }
@@ -418,42 +431,17 @@ header {
   0%{
     transform:scale(1);
     opacity:1;
-    color:$thirdBackground;
-    text-shadow:2px 2px black;
+    z-index:10;
   }
-  25%{
-    transform:scale(10);
-    color:$thirdBackground;
-    text-shadow:2px 2px black;
-  }
-  50%{
-    transform:scale(1);
+  75%{
+    transform:scale(7);
     color:$primaryText;
     text-shadow:none;
-  }
-  60% {
-    transform:translateY(-70px);
-  }
-  65% {
-    transform:translateY(0px);
-  }
-  75% {
-    transform:translateY(-40px);
-  }
-  80% {
-    transform:translateY(0px);
-  }
-  85% {
-    transform:translateY(-25px);
-  }
-  90% {
-    transform:translateY(0px);
-  }
-  95% {
-    transform:translateY(-10px);
+    z-index:10;
   }
   100% {
-    transform:translateY(0px);
-    opacity:1;
+    transform:scale(6);
+    opacity:0.3;
+    z-index:0;
   }
 }
