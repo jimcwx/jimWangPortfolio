@@ -367,8 +367,8 @@ nav a {
 
 header {
   height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 28, 35, 0.267)), to(rgba(8, 28, 35, 0))), url("../../assets/background.jpg");
-  background: linear-gradient(to bottom, rgba(8, 28, 35, 0.267), rgba(8, 28, 35, 0)), url("../../assets/background.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 28, 35, 0.267)), to(rgba(8, 28, 35, 0))), url("../assets/background.jpg");
+  background: linear-gradient(to bottom, rgba(8, 28, 35, 0.267), rgba(8, 28, 35, 0)), url("../assets/background.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: none;
