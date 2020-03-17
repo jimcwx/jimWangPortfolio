@@ -75,15 +75,15 @@ header {
       opacity:0;
     }
     .knees{
-      animation: wiggleIn 0.7s ease 1.9s;
+      animation: flyIn1 1s ease 1.9s;
       animation-fill-mode:forwards;
     }
     .too {
-      animation: wiggleIn 0.7s ease 2.2s;
+      animation: flyIn2 1s ease 2.0s;
       animation-fill-mode:forwards;
     }
     .sharp {
-      animation: wiggleIn 0.7s ease 2.5s;
+      animation: flyIn3 1s ease 2.1s;
       animation-fill-mode:forwards;
     }
 
@@ -94,49 +94,49 @@ header {
 
     .firstWord {
       .letter2 {
-        animation: flyIn1 1s ease 3s;
+        animation: flyIn4 1s ease 2.2s;
         animation-fill-mode:forwards;
       }
       .letter3 {
-        animation: flyIn2 1s ease 3.1s;
+        animation: flyIn5 1s ease 2.3s;
         animation-fill-mode:forwards;
       }
       .letter4 {
-        animation: flyIn3 1s ease 3.2s;
+        animation: flyIn6 1s ease 2.4s;
         animation-fill-mode:forwards;
       }
       .letter5 {
-        animation: flyIn4 1s ease 3.3s;
+        animation: flyIn7 1s ease 2.5s;
         animation-fill-mode:forwards;
       }
     }
 
     .secondWord {
       .letter2 {
-        animation: flyIn5 1s ease 3.4s;
+        animation: flyIn8 1s ease 2.6s;
         animation-fill-mode:forwards;
       }
       .letter3 {
-        animation: flyIn6 1s ease 3.5s;
+        animation: flyIn9 1s ease 2.7s;
         animation-fill-mode:forwards;
       }
     }
 
     .thirdWord {
       .letter2 {
-        animation: flyIn7 1s ease 3.6s;
+        animation: flyIn10 1s ease 2.8s;
         animation-fill-mode:forwards;
       }
       .letter3 {
-        animation: flyIn8 1s ease 3.7s;
+        animation: flyIn11 1s ease 2.9s;
         animation-fill-mode:forwards;
       }
       .letter4 {
-        animation: flyIn9 1s ease 3.8s;
+        animation: flyIn12 1s ease 3.0s;
         animation-fill-mode:forwards;
       }
       .letter5 {
-        animation: flyIn10 1s ease 3.9s;
+        animation: flyIn13 1s ease 3.1s;
         animation-fill-mode:forwards;
       }
     }
@@ -144,7 +144,7 @@ header {
 
   img.thirdLine {
     opacity:0;
-    animation: hireMe 1s linear 4.2s;
+    animation: hireMe 1s linear 1.4s;
     animation-fill-mode:forwards;
     object-fit:cover;
     max-width:200px;
@@ -166,33 +166,6 @@ header {
     transform:scale(1);
     color:$primaryText;
     text-shadow:none;
-    opacity:1;
-  }
-}
-
-@keyframes wiggleIn {
-  0% {
-    transform:scale(0.7) rotate(0deg);
-    opacity:1;
-  }
-  10% {
-    transform:scale(1.16) rotate(20deg);
-  }
-  20% {
-    transform:scale(1.62) rotate(-20deg);
-  }
-  30% {
-    transform:scale(2.08) rotate(20deg);
-  }
-  40% {
-    transform:scale(2.54) rotate(-20deg);
-  }
-  50% {
-    transform:scale(3) rotate(0deg);
-  }
-  100%{
-    transform:scale(1);
-    text-shadow:0 0 6px #0d2e63ce;
     opacity:1;
   }
 }
@@ -223,13 +196,13 @@ header {
 
 @keyframes flyIn2 {
   0%{transform: translate(0) scale(2);
-    transform: translate(-800px,-1000px);
+    transform: translate(-850px,-1000px);
     color:$primaryText;
     text-shadow:none;
     opacity:1
   }
   40%{
-    transform: translate(-400px,-500px);
+    transform: translate(-425px,-500px);
   }
   80%{
     transform: translate(0) scale(2);
@@ -246,13 +219,13 @@ header {
 
 @keyframes flyIn3 {
   0%{
-    transform: translate(-600px,-1000px);
+    transform: translate(-750px,-1000px);
     color:$primaryText;
     text-shadow:none;
     opacity:1
   }
   40%{
-    transform: translate(-300px,-500px);
+    transform: translate(-375px,-500px);
   }
   80%{
     transform: translate(0) scale(2);
@@ -269,13 +242,13 @@ header {
 
 @keyframes flyIn4 {
   0%{
-    transform: translate(-400px,-1000px);
+    transform: translate(-500px,-1000px);
     color:$primaryText;
     text-shadow:none;
     opacity:1
   }
   40%{
-    transform: translate(-200px,-500px);
+    transform: translate(-250px,-500px);
   }
   80%{
     transform: translate(0) scale(2);
@@ -292,13 +265,13 @@ header {
 
 @keyframes flyIn5 {
   0%{
-    transform: translate(-200px,-1000px);
+    transform: translate(-350px,-1000px);
     color:$primaryText;
     text-shadow:none;
     opacity:1
   }
   40%{
-    transform: translate(-100px,-500px);
+    transform: translate(-175px,-500px);
   }
   80%{
     transform: translate(0) scale(2);
@@ -315,16 +288,16 @@ header {
 
 @keyframes flyIn6 {
   0%{
-    transform: translate(1px,-1000px);
+    transform: translate(-140px,-1000px);
     color:$primaryText;
     text-shadow:none;
     opacity:1
   }
   40%{
-    transform: translate(1px,-500px);
+    transform: translate(-70px,-500px);
   }
   80%{
-    transform: translate(1px) scale(2);
+    transform: translate(0) scale(2);
     color: $secondaryText;
     text-shadow:2px solid goldenrod;
   }
@@ -337,6 +310,29 @@ header {
 }
 
 @keyframes flyIn7 {
+  0%{
+    transform: translate(0px,-1000px);
+    color:$primaryText;
+    text-shadow:none;
+    opacity:1
+  }
+  40%{
+    transform: translate(0px,-500px);
+  }
+  80%{
+    transform: translate(0) scale(2);
+    color: $secondaryText;
+    text-shadow:2px solid goldenrod;
+  }
+  100%{
+    transform: translate(0) scale(1);
+    color:$primaryBackground;
+    text-shadow:0 0 6px #0d2e63ce;
+    opacity:1
+  }
+}
+
+@keyframes flyIn8 {
   0%{
     transform: translate(200px,-1000px);
     color:$primaryText;
@@ -359,38 +355,15 @@ header {
   }
 }
 
-@keyframes flyIn8 {
-  0%{
-    transform: translate(400px,-1000px);
-    color:$primaryText;
-    text-shadow:none;
-    opacity:1
-  }
-  40%{
-    transform: translate(200px,-500px);
-  }
-  80%{
-    transform: translate(0) scale(2);
-    color: $secondaryText;
-    text-shadow:2px solid goldenrod;
-  }
-  100%{
-    transform: translate(0) scale(1);
-    color:$primaryBackground;
-    text-shadow:0 0 6px #0d2e63ce;
-    opacity:1
-  }
-}
-
 @keyframes flyIn9 {
   0%{
-    transform: translate(600px,-1000px);
+    transform: translate(350px,-1000px);
     color:$primaryText;
     text-shadow:none;
     opacity:1
   }
   40%{
-    transform: translate(300px,-500px);
+    transform: translate(175px,-500px);
   }
   80%{
     transform: translate(0) scale(2);
@@ -406,6 +379,52 @@ header {
 }
 
 @keyframes flyIn10 {
+  0%{
+    transform: translate(500px,-1000px);
+    color:$primaryText;
+    text-shadow:none;
+    opacity:1
+  }
+  40%{
+    transform: translate(250px,-500px);
+  }
+  80%{
+    transform: translate(0) scale(2);
+    color: $secondaryText;
+    text-shadow:2px solid goldenrod;
+  }
+  100%{
+    transform: translate(0) scale(1);
+    color:$primaryBackground;
+    text-shadow:0 0 6px #0d2e63ce;
+    opacity:1
+  }
+}
+
+@keyframes flyIn11 {
+  0%{
+    transform: translate(650px,-1000px);
+    color:$primaryText;
+    text-shadow:none;
+    opacity:1
+  }
+  40%{
+    transform: translate(325px,-500px);
+  }
+  80%{
+    transform: translate(0) scale(2);
+    color: $secondaryText;
+    text-shadow:2px solid goldenrod;
+  }
+  100%{
+    transform: translate(0) scale(1);
+    color:$primaryBackground;
+    text-shadow:0 0 6px #0d2e63ce;
+    opacity:1
+  }
+}
+
+@keyframes flyIn12 {
   0%{
     transform: translate(800px,-1000px);
     color:$primaryText;
@@ -428,21 +447,43 @@ header {
   }
 }
 
+@keyframes flyIn13 {
+  0%{
+    transform: translate(1000px,-1000px);
+    color:$primaryText;
+    text-shadow:none;
+    opacity:1
+  }
+  40%{
+    transform: translate(500px,-500px);
+  }
+  80%{
+    transform: translate(0) scale(2);
+    color: $secondaryText;
+    text-shadow:2px solid goldenrod;
+  }
+  100%{
+    transform: translate(0) scale(1);
+    color:$primaryBackground;
+    text-shadow:0 0 6px #0d2e63ce;
+    opacity:1
+  }
+}
+
 @keyframes hireMe {
   0%{
-    transform:scale(1);
-    opacity:1;
+    transform:scale(6);
+    opacity:0;
     z-index:10;
   }
   75%{
-    transform:scale(7);
-    color:$primaryText;
-    text-shadow:none;
+    transform:scale(6);
+    opacity:0.2;
     z-index:10;
   }
   100% {
     transform:scale(6);
-    opacity:0.3;
+    opacity:0.4;
     z-index:0;
   }
 }
