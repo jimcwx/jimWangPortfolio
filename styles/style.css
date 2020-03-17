@@ -243,13 +243,11 @@ html {
 body {
   color: #0d2e63;
   overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 .wrapper {
   max-width: 1170px;
   margin: 0 auto;
-  padding: 10px 100px 10px 100px;
 }
 
 ul {
@@ -376,6 +374,7 @@ header {
 
 header .wrapper {
   height: 100%;
+  padding: 10px 100px 10px 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -412,52 +411,25 @@ header .wrapper .text {
 
 header .wrapper .text h1 {
   font-size: 5rem;
-  margin: 10px;
+  margin: 0px;
 }
 
 header .wrapper .text h2 {
   font-size: 3rem;
-  margin: 30px 0px 5px 0px;
+  margin: 0px 0px 5px 0px;
+}
+
+header .firstLine {
+  opacity: 0;
+  color: #0d2e63;
+  -webkit-animation: flashIn 0.5s ease 3s;
+          animation: flashIn 0.5s ease 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 header .firstLine span {
   display: inline-block;
-}
-
-header .firstLine span.firstWord {
-  opacity: 0;
-  color: #0d2e63;
-  -webkit-animation: flashIn 0.5s ease 0.5s;
-          animation: flashIn 0.5s ease 0.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-header .firstLine span.secondWord {
-  opacity: 0;
-  color: #0d2e63;
-  -webkit-animation: flashIn 0.5s ease 0.7s;
-          animation: flashIn 0.5s ease 0.7s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-header .firstLine span.thirdWord {
-  opacity: 0;
-  color: #0d2e63;
-  -webkit-animation: flashIn 0.5s ease 1s;
-          animation: flashIn 0.5s ease 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-header .firstLine span.fourthWord {
-  opacity: 0;
-  color: #0d2e63;
-  -webkit-animation: flashIn 0.5s ease 1.3s;
-          animation: flashIn 0.5s ease 1.3s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 
 header .mainLine .knees, header .mainLine .too, header .mainLine .sharp {
@@ -466,22 +438,22 @@ header .mainLine .knees, header .mainLine .too, header .mainLine .sharp {
 }
 
 header .mainLine .knees {
-  -webkit-animation: flyIn1 1s ease 1.9s;
-          animation: flyIn1 1s ease 1.9s;
+  -webkit-animation: flyIn1 1s ease 0.3s;
+          animation: flyIn1 1s ease 0.3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
 header .mainLine .too {
-  -webkit-animation: flyIn2 1s ease 2.0s;
-          animation: flyIn2 1s ease 2.0s;
+  -webkit-animation: flyIn6 1s ease 0.8s;
+          animation: flyIn6 1s ease 0.8s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
 header .mainLine .sharp {
-  -webkit-animation: flyIn3 1s ease 2.1s;
-          animation: flyIn3 1s ease 2.1s;
+  -webkit-animation: flyIn9 1s ease 1.1s;
+          animation: flyIn9 1s ease 1.1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -492,79 +464,79 @@ header .mainLine .letter {
 }
 
 header .mainLine .firstWord .letter2 {
-  -webkit-animation: flyIn4 1s ease 2.2s;
-          animation: flyIn4 1s ease 2.2s;
+  -webkit-animation: flyIn2 1s ease 0.4s;
+          animation: flyIn2 1s ease 0.4s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
 header .mainLine .firstWord .letter3 {
-  -webkit-animation: flyIn5 1s ease 2.3s;
-          animation: flyIn5 1s ease 2.3s;
+  -webkit-animation: flyIn3 1s ease 0.5s;
+          animation: flyIn3 1s ease 0.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
 header .mainLine .firstWord .letter4 {
-  -webkit-animation: flyIn6 1s ease 2.4s;
-          animation: flyIn6 1s ease 2.4s;
+  -webkit-animation: flyIn4 1s ease 0.6s;
+          animation: flyIn4 1s ease 0.6s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
 header .mainLine .firstWord .letter5 {
-  -webkit-animation: flyIn7 1s ease 2.5s;
-          animation: flyIn7 1s ease 2.5s;
+  -webkit-animation: flyIn5 1s ease 0.7s;
+          animation: flyIn5 1s ease 0.7s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
 header .mainLine .secondWord .letter2 {
-  -webkit-animation: flyIn8 1s ease 2.6s;
-          animation: flyIn8 1s ease 2.6s;
+  -webkit-animation: flyIn7 1s ease 0.9s;
+          animation: flyIn7 1s ease 0.9s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
 header .mainLine .secondWord .letter3 {
-  -webkit-animation: flyIn9 1s ease 2.7s;
-          animation: flyIn9 1s ease 2.7s;
+  -webkit-animation: flyIn8 1s ease 1s;
+          animation: flyIn8 1s ease 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
 header .mainLine .thirdWord .letter2 {
-  -webkit-animation: flyIn10 1s ease 2.8s;
-          animation: flyIn10 1s ease 2.8s;
+  -webkit-animation: flyIn10 1s ease 1.2s;
+          animation: flyIn10 1s ease 1.2s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
 header .mainLine .thirdWord .letter3 {
-  -webkit-animation: flyIn11 1s ease 2.9s;
-          animation: flyIn11 1s ease 2.9s;
+  -webkit-animation: flyIn11 1s ease 1.3s;
+          animation: flyIn11 1s ease 1.3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
 header .mainLine .thirdWord .letter4 {
-  -webkit-animation: flyIn12 1s ease 3.0s;
-          animation: flyIn12 1s ease 3.0s;
+  -webkit-animation: flyIn12 1s ease 1.4s;
+          animation: flyIn12 1s ease 1.4s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
 header .mainLine .thirdWord .letter5 {
-  -webkit-animation: flyIn13 1s ease 3.1s;
-          animation: flyIn13 1s ease 3.1s;
+  -webkit-animation: flyIn13 1s ease 1.5s;
+          animation: flyIn13 1s ease 1.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
 header img.thirdLine {
   opacity: 0;
-  -webkit-animation: hireMe 1s linear 1.4s;
-          animation: hireMe 1s linear 1.4s;
+  -webkit-animation: hireMe 1s linear 0.3s;
+          animation: hireMe 1s linear 0.3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -o-object-fit: cover;
@@ -1321,13 +1293,13 @@ header img.thirdLine {
     -webkit-transform: scale(6);
             transform: scale(6);
     opacity: 0;
-    z-index: 10;
+    z-index: 0;
   }
   75% {
     -webkit-transform: scale(6);
             transform: scale(6);
     opacity: 0.2;
-    z-index: 10;
+    z-index: 0;
   }
   100% {
     -webkit-transform: scale(6);
@@ -1342,13 +1314,13 @@ header img.thirdLine {
     -webkit-transform: scale(6);
             transform: scale(6);
     opacity: 0;
-    z-index: 10;
+    z-index: 0;
   }
   75% {
     -webkit-transform: scale(6);
             transform: scale(6);
     opacity: 0.2;
-    z-index: 10;
+    z-index: 0;
   }
   100% {
     -webkit-transform: scale(6);
@@ -1356,4 +1328,9 @@ header img.thirdLine {
     opacity: 0.4;
     z-index: 0;
   }
+}
+
+.about {
+  padding-top: 100px;
+  background: #d5eaef;
 }

@@ -7,6 +7,7 @@ header {
 
   .wrapper {
     height: 100%;
+    padding: 10px 100px 10px 100px;
     @include flex(column);
 
     .topBar {
@@ -23,12 +24,12 @@ header {
       z-index:0;
       h1 {
         font-size: 5rem;
-        margin: 10px;
+        margin: 0px;
       }
 
       h2 {
         font-size: 3rem;
-        margin:30px 0px 5px 0px;
+        margin:0px 0px 5px 0px;
       }
     }
   }
@@ -38,34 +39,10 @@ header {
     span {
       display: inline-block;
     }
-    span.firstWord {
-      // transform:scale(1.6);
-      opacity:0;
-      color:$primaryText;
-      animation: flashIn 0.5s ease 0.5s;
-      animation-fill-mode:forwards;
-    }
-    span.secondWord{
-      // transform:scale(1.6);
-      opacity: 0;
-      color:$primaryText;
-      animation: flashIn 0.5s ease 0.7s;
-      animation-fill-mode:forwards;
-    }
-    span.thirdWord{
-      // transform:scale(1.6);
-      opacity: 0;
-      color:$primaryText;
-      animation: flashIn 0.5s ease 1s;
-      animation-fill-mode:forwards;
-    }
-    span.fourthWord{
-      // transform:scale(1.6);
-      opacity: 0;
-      color:$primaryText;
-      animation: flashIn 0.5s ease 1.3s;
-      animation-fill-mode:forwards;
-    }
+    opacity:0;
+    color:$primaryText;
+    animation: flashIn 0.5s ease 3s;
+    animation-fill-mode:forwards;
   }
 
   // second line styles and animations
@@ -75,15 +52,15 @@ header {
       opacity:0;
     }
     .knees{
-      animation: flyIn1 1s ease 1.9s;
+      animation: flyIn1 1s ease 0.3s;
       animation-fill-mode:forwards;
     }
     .too {
-      animation: flyIn2 1s ease 2.0s;
+      animation: flyIn6 1s ease 0.8s;
       animation-fill-mode:forwards;
     }
     .sharp {
-      animation: flyIn3 1s ease 2.1s;
+      animation: flyIn9 1s ease 1.1s;
       animation-fill-mode:forwards;
     }
 
@@ -94,49 +71,49 @@ header {
 
     .firstWord {
       .letter2 {
-        animation: flyIn4 1s ease 2.2s;
+        animation: flyIn2 1s ease 0.4s;
         animation-fill-mode:forwards;
       }
       .letter3 {
-        animation: flyIn5 1s ease 2.3s;
+        animation: flyIn3 1s ease 0.5s;
         animation-fill-mode:forwards;
       }
       .letter4 {
-        animation: flyIn6 1s ease 2.4s;
+        animation: flyIn4 1s ease 0.6s;
         animation-fill-mode:forwards;
       }
       .letter5 {
-        animation: flyIn7 1s ease 2.5s;
+        animation: flyIn5 1s ease 0.7s;
         animation-fill-mode:forwards;
       }
     }
 
     .secondWord {
       .letter2 {
-        animation: flyIn8 1s ease 2.6s;
+        animation: flyIn7 1s ease 0.9s;
         animation-fill-mode:forwards;
       }
       .letter3 {
-        animation: flyIn9 1s ease 2.7s;
+        animation: flyIn8 1s ease 1s;
         animation-fill-mode:forwards;
       }
     }
 
     .thirdWord {
       .letter2 {
-        animation: flyIn10 1s ease 2.8s;
+        animation: flyIn10 1s ease 1.2s;
         animation-fill-mode:forwards;
       }
       .letter3 {
-        animation: flyIn11 1s ease 2.9s;
+        animation: flyIn11 1s ease 1.3s;
         animation-fill-mode:forwards;
       }
       .letter4 {
-        animation: flyIn12 1s ease 3.0s;
+        animation: flyIn12 1s ease 1.4s;
         animation-fill-mode:forwards;
       }
       .letter5 {
-        animation: flyIn13 1s ease 3.1s;
+        animation: flyIn13 1s ease 1.5s;
         animation-fill-mode:forwards;
       }
     }
@@ -144,7 +121,7 @@ header {
 
   img.thirdLine {
     opacity:0;
-    animation: hireMe 1s linear 1.4s;
+    animation: hireMe 1s linear 0.3s;
     animation-fill-mode:forwards;
     object-fit:cover;
     max-width:200px;
@@ -474,12 +451,12 @@ header {
   0%{
     transform:scale(6);
     opacity:0;
-    z-index:10;
+    z-index:0;
   }
   75%{
     transform:scale(6);
     opacity:0.2;
-    z-index:10;
+    z-index:0;
   }
   100% {
     transform:scale(6);
