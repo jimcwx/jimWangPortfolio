@@ -95,7 +95,6 @@ nav a {
   a:focus,
   a:hover {
     animation: wiggleFlash 0.5s;
-    animation-fill-mode:forwards;
     transform:scale(1.25);
   }
 }

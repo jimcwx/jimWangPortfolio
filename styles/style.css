@@ -336,8 +336,6 @@ nav a {
 .button a:hover {
   -webkit-animation: wiggleFlash 0.5s;
           animation: wiggleFlash 0.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
   -webkit-transform: scale(1.25);
           transform: scale(1.25);
 }
@@ -1508,7 +1506,7 @@ header img.thirdLine {
 }
 
 .projects {
-  padding-top: 50px;
+  padding: 50px 0 50px 0;
   background: #8eb8c4;
 }
 
@@ -1538,6 +1536,7 @@ header img.thirdLine {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 100px;
 }
 
 .projects .project .pictureLink {
@@ -1573,4 +1572,56 @@ header img.thirdLine {
 .projects .project .skillsUsed li .firebase {
   position: relative;
   right: 10%;
+}
+
+.projects .project5 {
+  margin-bottom: 0;
+}
+
+.projects .project2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  text-align: right;
+}
+
+.projects .project2 h3 {
+  margin: 0 0 0 6%;
+}
+
+.projects .project2 .firebase {
+  position: relative;
+  left: 10%;
+}
+
+.projects .project2 .button {
+  margin: 0 0 0 30px;
+}
+
+.projects .project4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  text-align: right;
+}
+
+.projects .project4 h3 {
+  margin: 0 0 0 6%;
+}
+
+.projects .project4 .firebase {
+  position: relative;
+  left: 10%;
+}
+
+.projects .project4 .button {
+  margin: 0 0 0 30px;
 }
