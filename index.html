@@ -16,17 +16,17 @@
         <img src="./assets/logo.png" alt="Logo for Knees Too Sharp">
         <nav>
           <ul>
-            <li><a href="#about">about</a></li>
-            <li><a href="#projects">projects</a></li>
-            <li><a href="#skillz">skills</a></li>
-            <li><a href="#contact">contact</a></li>
+            <li><a tabindex="20" href="#about">about</a></li>
+            <li><a tabindex="25" href="#projects">projects</a></li>
+            <li><a tabindex="30" href="#skillz">skills</a></li>
+            <li><a tabindex="35" href="#contact">contact</a></li>
           </ul>
         </nav>
       </section>
       <section class="text">
         <img src="./assets/logo.png" alt="Logo for Knees Too Sharp, front-end developer" class="thirdLine">
         
-        <h1 class="mainLine">
+        <h1 class="mainLine" aria-label="animation for a line that reads knees too sharp">
           <span class="firstWord">
             <span class="knees">K</span><span class="letter letter2">n</span><span class="letter letter3">e</span><span class="letter letter4">e</span><span class="letter letter5">s</span>
           </span>
@@ -37,13 +37,13 @@
             <span class="sharp">S</span><span class="letter letter2">h</span><span class="letter letter3">a</span><span class="letter letter4">r</span><span class="letter letter5">p</span>
           </span>
         </h1>
-        <h2 class="firstLine">
+        <h2 class="firstLine" aria-label="animation for a line that reads front-end developer">
           <span class="firstWord">Front</span><span class="secondWord">-end</span>
           <span class="thirdWord">developer</span>
         </h2>
       </section>
-      <div class="scrollDownArrow" tabindex=0>        
-        <img src="./assets/downArrow.png" alt="Arrow where you can press to scroll down">
+      <div class="scrollDownArrow" tabindex=40>        
+        <img src="./assets/downArrow.png" alt="Arrow where you can press to scroll down to the main sections">
       </div>
     </div>
   </header>
@@ -62,13 +62,26 @@
       <div class="wrapper">
         <h2>Projects</h2>
         <div class="project project1">
-          <img src="./assets/nutriNav.jpg" alt="The NutriNav website on an Apple computer">
+          <a href="https://nutrition-navigator.github.io/nutriNav/#/" class="pictureLink">
+            <img src="./assets/nutriNav.png" alt="The NutriNav website on an Apple computer">
+          </a>
           <div class="text">
             <h3>NutriNav</h3>
             <h4>React, Firebase & Nutritionix API application</h4>
             <p>An application that allows the user to search for ingredients, common or branded, and to compare the nutritional values</p>
-            <div class="tags">
-              <span>React</span><span>Firebase</span><span></span>
+            <ul class="skillsUsed">
+              <li><i class="fab fa-react"></i></li>
+              <li><img src="./assets/firebaseIcon.png" class="firebase" alt="Google Firebase Icon"></li>
+              <li><i class="fab fa-js"></i></li>
+              <li><i class="fab fa-css3-alt"></i></li>
+              <li><i class="fab fa-html5"></i></li>
+              <li><i class="fab fa-github"></i></li>
+            </ul>
+            <div class="button">
+              <a tabindex="45" href="https://nutrition-navigator.github.io/nutriNav/#/">view live</a>
+            </div>
+            <div class="button">
+              <a tabindex="50" href="https://github.com/nutrition-navigator/nutriNav">github</a>
             </div>
           </div>
         </div>

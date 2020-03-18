@@ -1,0 +1,44 @@
+.projects {
+  padding-top: 50px;
+  background:$thirdBackground;
+
+  h2 {
+    padding: 6% 6% 5% 12%;
+  }
+  .wrapper {
+    @include flex(column);
+    background: $secondaryBackground;
+    padding-bottom:80px;
+  }
+
+  .project {
+    @include flex(row);
+    flex-wrap: wrap;
+
+    .pictureLink {
+      width:60%;
+    }
+    .text {
+      width:40%;
+    }
+
+    ul {
+      @include flex(row);
+      flex-wrap:wrap;
+      justify-content:space-around;
+    }
+
+    .skillsUsed li {
+      display:inline-block;
+      margin:5px;
+      width: calc(100% / 3 - 10px);
+      font-size: 5rem;
+      color:black;
+      .firebase {
+        position:relative;
+        right: 10%;
+      }
+    }
+
+  }
+}

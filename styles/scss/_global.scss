@@ -19,12 +19,37 @@ ul {
 
 // Fonts!
 
-h1, h2, h3, .topBar span {
+h1, h2, h3,h4, .topBar span {
   font-family: 'Bebas Neue';
 }
 
 p, li, a {
   font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+p {
+  line-height: 1.4;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin:0;
+  color:$primaryText;
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin:0;
+  border-bottom:1px solid $primaryText;
+  color:$secondaryText;
+  margin-right:6%;
+}
+
+h4 {
+  font-size: 1.7rem;
+  margin:0;
+  color:$primaryText
 }
 
 nav a {
@@ -43,4 +68,54 @@ nav a {
 .sharp {
   color: $primaryBackground;
   text-shadow: 1px 1px $primaryText
+}
+
+// Project buttons
+
+.button {
+  display:inline-block;
+  position:relative;
+  margin-right: 30px;
+  a{
+    text-align:center;
+    display: block;
+    text-decoration:none;
+    color:$primaryBackground;
+    background:$secondaryText;
+    box-shadow:none;
+    padding:10px 30px 10px 30px;
+    width:100%;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    
+    transition: all 0.5s;
+    transform:scale(1) rotate(0);
+  }
+
+  a:focus,
+  a:hover {
+    animation: wiggleFlash 0.5s;
+    animation-fill-mode:forwards;
+    transform:scale(1.25);
+  }
+}
+
+
+@keyframes wiggleFlash {
+  0%{
+    transform:scale(1) rotate(-5deg);
+    background:$secondaryText;
+    color:$primaryBackground;
+  }
+  50%{
+    transform:scale(1.15) rotate(5deg);
+    color:$primaryText;
+    box-shadow:2px 2px $secondaryText, -2px -2px $secondaryText;
+    background:white;
+  }
+  100%{
+    transform:scale(1.25) rotate(0deg);
+    background:$secondaryText;
+    color:$primaryBackground;
+  }
 }
