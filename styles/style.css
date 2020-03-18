@@ -1543,6 +1543,11 @@ header img.thirdLine {
   width: 60%;
 }
 
+.projects .project .pictureLink:hover, .projects .project .pictureLink:focus {
+  -webkit-animation: upDown 0.5s;
+          animation: upDown 0.5s;
+}
+
 .projects .project .text {
   width: 40%;
 }
@@ -1624,4 +1629,34 @@ header img.thirdLine {
 
 .projects .project4 .button {
   margin: 0 0 0 30px;
+}
+
+@-webkit-keyframes upDown {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes upDown {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }

@@ -18,10 +18,16 @@
 
     .pictureLink {
       width:60%;
+
+      &:hover,
+      &:focus {
+        animation: upDown 0.5s;
+      }
     }
     .text {
       width:40%;
     }
+
 
     ul {
       @include flex(row);
@@ -80,5 +86,17 @@
     .button{
       margin: 0 0 0 30px;
     }
+  }
+}
+
+@keyframes upDown {
+  0%{
+    transform:translateY(0)
+  }
+  50% {
+    transform:translateY(-10px);
+  }
+  100% {
+    transform:translateY(0);
   }
 }
