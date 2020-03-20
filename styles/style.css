@@ -1562,14 +1562,16 @@ header img.thirdLine {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin: 0 6 0 0%;
 }
 
 .projects .project .skillsUsed li {
   display: inline-block;
-  margin: 5px;
-  width: calc(100% / 3 - 10px);
+  margin: 5px 0;
+  width: calc(100% / 4 - 10px);
   font-size: 5rem;
   color: black;
 }
@@ -1577,6 +1579,11 @@ header img.thirdLine {
 .projects .project .skillsUsed li .firebase {
   position: relative;
   right: 10%;
+}
+
+.projects .project .skillsUsed li .jqueryIcon {
+  max-width: 96px;
+  max-height: 96px;
 }
 
 .projects .project5 {
@@ -1596,6 +1603,16 @@ header img.thirdLine {
 
 .projects .project2 h3 {
   margin: 0 0 0 6%;
+}
+
+.projects .project2 p {
+  margin: 24px 0 24px 6%;
+}
+
+.projects .project2 ul {
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
 }
 
 .projects .project2 .firebase {
@@ -1620,6 +1637,16 @@ header img.thirdLine {
 
 .projects .project4 h3 {
   margin: 0 0 0 6%;
+}
+
+.projects .project4 p {
+  margin: 24px 0 24px 6%;
+}
+
+.projects .project4 ul {
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
 }
 
 .projects .project4 .firebase {

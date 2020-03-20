@@ -32,18 +32,23 @@
     ul {
       @include flex(row);
       flex-wrap:wrap;
-      justify-content:space-around;
+      justify-content:left;
+      margin: 0 6 0 0%;
     }
 
     .skillsUsed li {
       display:inline-block;
-      margin:5px;
-      width: calc(100% / 3 - 10px);
+      margin:5px 0;
+      width: calc(100% / 4 - 10px);
       font-size: 5rem;
       color:black;
       .firebase {
         position:relative;
         right: 10%;
+      }
+      .jqueryIcon {
+        max-width:96px;
+        max-height:96px;
       }
     }
   }
@@ -58,6 +63,14 @@
 
     h3 {
       margin: 0 0 0 6%;
+    }
+
+    p {
+      margin: 24px 0 24px 6%;
+    }
+
+    ul {
+      justify-content: right;
     }
 
     .firebase {
@@ -76,6 +89,14 @@
 
     h3 {
       margin: 0 0 0 6%;
+    }
+
+    p {
+      margin: 24px 0 24px 6%;
+    }
+
+    ul {
+      justify-content: right;
     }
 
     .firebase {
