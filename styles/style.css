@@ -1562,9 +1562,9 @@ header img.thirdLine {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin: 0 6 0 0%;
 }
 
@@ -1610,9 +1610,9 @@ header img.thirdLine {
 }
 
 .projects .project2 ul {
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .projects .project2 .firebase {
@@ -1644,9 +1644,9 @@ header img.thirdLine {
 }
 
 .projects .project4 ul {
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .projects .project4 .firebase {

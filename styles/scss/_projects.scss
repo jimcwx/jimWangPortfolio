@@ -32,7 +32,7 @@
     ul {
       @include flex(row);
       flex-wrap:wrap;
-      justify-content:left;
+      justify-content:flex-start;
       margin: 0 6 0 0%;
     }
 
@@ -70,7 +70,7 @@
     }
 
     ul {
-      justify-content: right;
+      justify-content: flex-end;
     }
 
     .firebase {
@@ -96,7 +96,7 @@
     }
 
     ul {
-      justify-content: right;
+      justify-content: flex-end;
     }
 
     .firebase {
