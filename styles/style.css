@@ -524,6 +524,9 @@ header .wrapper .scrollDownArrow {
   position: absolute;
   bottom: 20px;
   left: calc(50% - 25px);
+}
+
+header .wrapper .scrollDownArrow img {
   -webkit-animation: bob 0.5s ease-out infinite;
           animation: bob 0.5s ease-out infinite;
 }
@@ -1505,6 +1508,10 @@ header img.thirdLine {
   padding: 12%;
 }
 
+.about .scrollDownArrow:focus {
+  outline: 3px dotted white;
+}
+
 .projects {
   padding: 50px 0 50px 0;
   background: #8eb8c4;
@@ -1548,6 +1555,10 @@ header img.thirdLine {
           animation: upDown 0.5s;
 }
 
+.projects .project .pictureLink:focus {
+  outline: 3px dotted #275c90;
+}
+
 .projects .project .text {
   width: 40%;
 }
@@ -1584,6 +1595,10 @@ header img.thirdLine {
 .projects .project .skillsUsed li .jqueryIcon {
   max-width: 96px;
   max-height: 96px;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  position: relative;
+  bottom: 3px;
 }
 
 .projects .project5 {

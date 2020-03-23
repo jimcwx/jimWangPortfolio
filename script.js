@@ -2,6 +2,7 @@ app = {};
 
 app.init = function() {
   app.landingPageArrowClick();
+  app.landingPageArrowEnter();
 }
 
 $(function () {
@@ -14,4 +15,12 @@ app.landingPageArrowClick = function() {
       scrollTop: $("#about").offset().top
     }, 500);
   });
+}
+
+app.landingPageArrowEnter = function() {
+  $(".scrollDownArrow").keyup(function(e) {
+    if (e.which === 13) {
+      this.click();
+    }
+  })
 }
