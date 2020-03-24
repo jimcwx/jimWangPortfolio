@@ -32,8 +32,10 @@ app.navScrollAppear = function() {
   let winH = $win.height();
 
   $win.on("scroll", function() {
-    if ($(this).scrollTop() > winH) {
+    if ($(this).scrollTop() > (winH / 2)) {
       $nav.removeClass("disabled").addClass("enabled");
+    } else {
+      $nav.removeClass("enabled").addClass("disabled");
     }
   }).on("resize", function() {
     winH = $(this).height();
