@@ -23,12 +23,16 @@ h1, h2, h3,h4, .topBar span {
   font-family: 'Bebas Neue';
 }
 
-p, li, a {
+p, li, a, label {
   font-family: 'Saira Extra Condensed', sans-serif;
 }
 
 p {
   line-height: 1.4;
+  font-size: 1.5rem;
+}
+
+label {
   font-size: 1.5rem;
 }
 

@@ -40,21 +40,16 @@
     }
 
     .skillsUsed li {
-      display:inline-block;
+      @include flexCenter(row);
       margin:5px 0;
       width: calc(100% / 4 - 10px);
       font-size: 5rem;
       color:black;
-      .firebase {
-        position:relative;
-        right: 10%;
-      }
       .jqueryIcon {
         max-width:96px;
         max-height:96px;
-        transform:scale(0.9);
+        transform:scale(0.85);
         position:relative;
-        bottom: 3px;
       }
     }
   }

@@ -1,0 +1,74 @@
+.skillz {
+  padding: 50px 0 50px 0;
+  background:$thirdBackground;
+
+  h2 {
+    padding: 6% 6% 1% 12%;
+  }
+  .wrapper {
+    @include flex(column);
+    background: $secondaryBackground;
+    padding-bottom:80px;
+  }
+
+  ul {
+    @include flex(row);
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    margin: 0 12% 0% 12%;
+    padding: 3%;
+    border: 5px solid $secondaryText;
+    border-radius: 10px;
+  }
+
+  li {
+    @include flexCenter(row);
+    margin:0 auto;
+    width: calc(100% / 4 - 10px);
+    font-size: 5rem;
+    color:black;
+    font-size: 8rem;
+    position:relative;
+
+    i{
+      opacity: 1;
+      transition: all 0.5s
+    }
+
+    img {
+      opacity: 1;
+      transition: all 0.5s
+    }
+
+    .jqueryIcon {
+      max-width:130px;
+      max-height:130px;
+      position:relative;
+      bottom: 3px;
+    }
+    .firebase {
+      transform:scale(1.4)
+    }
+    p {
+      position: absolute;
+      opacity:0;
+      transition: all 0.5s;
+      color: $primaryText;
+      text-shadow:1px 1px white;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  }
+
+  li:hover,
+  li:focus {
+    i,
+    img {
+      opacity: 0.1
+    }
+    p {
+      opacity: 1;
+    }
+  }
+
+}

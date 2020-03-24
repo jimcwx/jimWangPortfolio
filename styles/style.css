@@ -259,12 +259,16 @@ h1, h2, h3, h4, .topBar span {
   font-family: 'Bebas Neue';
 }
 
-p, li, a {
+p, li, a, label {
   font-family: 'Saira Extra Condensed', sans-serif;
 }
 
 p {
   line-height: 1.4;
+  font-size: 1.5rem;
+}
+
+label {
   font-size: 1.5rem;
 }
 
@@ -1479,7 +1483,7 @@ header img.thirdLine {
 }
 
 .about {
-  padding-top: 50px;
+  padding: 50px 0 50px 0;
   background: #8eb8c4;
 }
 
@@ -1500,7 +1504,7 @@ header img.thirdLine {
   max-width: 300px;
   position: relative;
   top: 20px;
-  right: 5%;
+  right: 10%;
 }
 
 .about .wrapper .text {
@@ -1580,25 +1584,31 @@ header img.thirdLine {
 }
 
 .projects .project .skillsUsed li {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 5px 0;
   width: calc(100% / 4 - 10px);
   font-size: 5rem;
   color: black;
 }
 
-.projects .project .skillsUsed li .firebase {
-  position: relative;
-  right: 10%;
-}
-
 .projects .project .skillsUsed li .jqueryIcon {
   max-width: 96px;
   max-height: 96px;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
   position: relative;
-  bottom: 3px;
 }
 
 .projects .project5 {
@@ -1701,4 +1711,290 @@ header img.thirdLine {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
+}
+
+.skillz {
+  padding: 50px 0 50px 0;
+  background: #8eb8c4;
+}
+
+.skillz h2 {
+  padding: 6% 6% 1% 12%;
+}
+
+.skillz .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #d5eaefea;
+  padding-bottom: 80px;
+}
+
+.skillz ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0 12% 0% 12%;
+  padding: 3%;
+  border: 5px solid #275c90;
+  border-radius: 10px;
+}
+
+.skillz li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  width: calc(100% / 4 - 10px);
+  font-size: 5rem;
+  color: black;
+  font-size: 8rem;
+  position: relative;
+}
+
+.skillz li i {
+  opacity: 1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.skillz li img {
+  opacity: 1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.skillz li .jqueryIcon {
+  max-width: 130px;
+  max-height: 130px;
+  position: relative;
+  bottom: 3px;
+}
+
+.skillz li .firebase {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.skillz li p {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #0d2e63;
+  text-shadow: 1px 1px white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.skillz li:hover i,
+.skillz li:hover img,
+.skillz li:focus i,
+.skillz li:focus img {
+  opacity: 0.1;
+}
+
+.skillz li:hover p,
+.skillz li:focus p {
+  opacity: 1;
+}
+
+.contact {
+  border-top: 50px solid #0d2e63;
+  padding: 100px 0 50px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 28, 35, 0.267)), to(rgba(8, 28, 35, 0))), url("../assets/background.jpg");
+  background: linear-gradient(to bottom, rgba(8, 28, 35, 0.267), rgba(8, 28, 35, 0)), url("../assets/background.jpg");
+  background-position: center;
+  background-size: 250% 250%;
+  background-repeat: none;
+  background-attachment: fixed;
+}
+
+.contact h2 {
+  padding: 6% 6% 1% 12%;
+}
+
+.contact .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #d5eaefea;
+  padding-bottom: 50px;
+}
+
+.contact .leftRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact .leftRight .emailSM {
+  width: calc(35% - 10px);
+  margin: 0% 5px 0% 5px;
+}
+
+.contact .leftRight form {
+  width: calc(59% - 10px);
+  margin: 0 3% 0 3%;
+}
+
+.contact .leftRight form button {
+  margin-top: 10px;
+  border: none;
+  padding: 10px 30px 10px 30px;
+  font-size: 1.2rem;
+  background: #275c90;
+  color: #d5eaef;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: scale(1) rotate(0);
+          transform: scale(1) rotate(0);
+}
+
+.contact .leftRight form button:focus,
+.contact .leftRight form button:hover {
+  -webkit-animation: wiggleFlash 0.5s;
+          animation: wiggleFlash 0.5s;
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.contact ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact ul li {
+  width: 50%;
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.contact ul p {
+  position: absolute;
+  opacity: 0;
+  z-index: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #0d2e63;
+}
+
+.contact ul a {
+  opacity: 1;
+  font-size: 5rem;
+  color: #275c90;
+  z-index: 10;
+}
+
+.contact ul i {
+  z-index: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.contact ul li:hover p,
+.contact ul li:focus p {
+  opacity: 1;
+}
+
+.contact ul li:hover i,
+.contact ul li:focus i {
+  opacity: 0.1;
+}
+
+.contact .field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 5px;
+}
+
+.contact .field input, .contact .field textarea {
+  border: none;
+}
+
+.contact .field input:focus,
+.contact .field textarea:focus {
+  outline: 2px solid #275c90;
+  -webkit-box-shadow: 4px 4px 4px #0d2e63;
+          box-shadow: 4px 4px 4px #0d2e63;
+}
+
+footer p {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  background: #0d2e63;
+  color: #d5eaef;
 }
