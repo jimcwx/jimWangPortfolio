@@ -3,6 +3,7 @@ app = {};
 app.init = function() {
   app.landingPageArrowClick();
   app.landingPageArrowEnter();
+  app.navScrollAppear();
 }
 
 $(function () {
@@ -22,5 +23,19 @@ app.landingPageArrowEnter = function() {
     if (e.which === 13) {
       this.click();
     }
+  })
+}
+
+app.navScrollAppear = function() {
+  let $nav = $(".sideNav");
+  let $win = $(window);
+  let winH = $win.height();
+
+  $win.on("scroll", function() {
+    if ($(this).scrollTop() > winH) {
+      $nav.removeClass("disabled").addClass("enabled");
+    }
+  }).on("resize", function() {
+    winH = $(this).height();
   })
 }

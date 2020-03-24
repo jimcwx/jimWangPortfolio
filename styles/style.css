@@ -1482,6 +1482,177 @@ header img.thirdLine {
   }
 }
 
+body .emailSMSide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 10%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body .emailSMSide li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+body .emailSMSide li p {
+  position: absolute;
+  opacity: 0;
+  z-index: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #0d2e63;
+  text-shadow: 0px 0px 3px #d5eaefea;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+body .emailSMSide li a {
+  opacity: 1;
+  font-size: 3rem;
+  margin: 10px;
+  color: #0d2e63;
+  z-index: 10;
+  text-shadow: 0px 0px 6px #d5eaefea;
+  border-radius: 50%;
+  background: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+body .emailSMSide li:hover a,
+body .emailSMSide li:focus a {
+  opacity: 0.1;
+}
+
+body .emailSMSide li:hover p,
+body .emailSMSide li:focus p {
+  opacity: 1;
+}
+
+body .sideNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  top: 50%;
+  right: 5%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body .sideNav li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+body .sideNav li p {
+  position: absolute;
+  opacity: 0;
+  z-index: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #0d2e63;
+  text-shadow: 0px 0px 3px #d5eaefea;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+body .sideNav li a {
+  opacity: 1;
+  font-size: 3rem;
+  margin: 10px;
+  color: #0d2e63;
+  z-index: 10;
+  text-shadow: 0px 0px 6px #d5eaefea;
+  border-radius: 50%;
+  background: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+body .sideNav li:hover a,
+body .sideNav li:focus a {
+  opacity: 0.1;
+}
+
+body .sideNav li:hover p,
+body .sideNav li:focus p {
+  opacity: 1;
+}
+
+body .disabled {
+  display: none;
+  opacity: 0;
+}
+
+body .enabled {
+  display: block;
+  -webkit-animation: appear 0.5s;
+          animation: appear 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .about {
   padding: 50px 0 50px 0;
   background: #8eb8c4;
