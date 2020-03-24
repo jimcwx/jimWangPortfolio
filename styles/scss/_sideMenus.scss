@@ -2,6 +2,7 @@ body {
 
   // Social Media Side Bar
   .emailSMSide {
+    margin: 0;
     @include flex(column);
     position:fixed;
     top:50%;
@@ -49,6 +50,7 @@ body {
   //Navigation Side Bar
 
   .sideNav {
+    margin:0;
     @include flex(column);
     position:fixed;
     top:50%;
