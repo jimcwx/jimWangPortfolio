@@ -25,9 +25,8 @@
     @include flexCenter(row);
     margin:0 auto;
     width: calc(100% / 4 - 10px);
-    font-size: 5rem;
     color:black;
-    font-size: 8rem;
+    font-size: 7rem;
     position:relative;
 
     i{
@@ -40,14 +39,8 @@
       transition: all 0.5s
     }
 
-    .jqueryIcon {
-      max-width:130px;
-      max-height:130px;
-      position:relative;
-      bottom: 3px;
-    }
     .firebase {
-      transform:scale(1.4)
+      transform:scale(1.3)
     }
     p {
       position: absolute;

@@ -236,6 +236,22 @@ html {
   overflow: hidden;
 }
 
+/* Saira Extra Condensed;*/
+@font-face {
+  font-family: 'Saira Extra Condensed';
+  font-style: sans-serif;
+  font-weight: 400;
+  src: local("Saira Extra Condensed"), local("Saira-Extra-Condensed"), url("../webfonts/Saira_Extra_Condensed/SairaExtraCondensed-Regular.ttf") format("truetype");
+}
+
+/* Bebas Neue */
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: cursive;
+  font-weight: 400;
+  src: local("Bebas Neue"), local("Bebas-Neue"), url("../webfonts/Bebas_Neue/BebasNeue-Regular.ttf") format("truetype");
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -273,7 +289,7 @@ label {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 5rem;
   margin: 0;
   color: #0d2e63;
 }
@@ -1585,18 +1601,20 @@ body .sideNav li {
 
 body .sideNav li p {
   position: absolute;
-  opacity: 0;
   z-index: 0;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   color: #0d2e63;
   text-shadow: 0px 0px 3px #d5eaefea;
   font-size: 1.4rem;
   font-weight: bold;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  text-transform: uppercase;
 }
 
 body .sideNav li a {
-  opacity: 1;
+  opacity: 0.1;
   font-size: 3rem;
   margin: 10px;
   color: #0d2e63;
@@ -1610,12 +1628,15 @@ body .sideNav li a {
 
 body .sideNav li:hover a,
 body .sideNav li:focus a {
-  opacity: 0.1;
+  opacity: 0;
 }
 
 body .sideNav li:hover p,
 body .sideNav li:focus p {
-  opacity: 1;
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  font-weight: bold;
+  text-shadow: 0px 0px 3px #d5eaefea;
 }
 
 body .disabled {
@@ -1942,9 +1963,8 @@ body .enabled {
           align-items: center;
   margin: 0 auto;
   width: calc(100% / 4 - 10px);
-  font-size: 5rem;
   color: black;
-  font-size: 8rem;
+  font-size: 7rem;
   position: relative;
 }
 
@@ -1960,16 +1980,9 @@ body .enabled {
   transition: all 0.5s;
 }
 
-.skillz li .jqueryIcon {
-  max-width: 130px;
-  max-height: 130px;
-  position: relative;
-  bottom: 3px;
-}
-
 .skillz li .firebase {
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .skillz li p {
@@ -2154,6 +2167,10 @@ body .enabled {
 
 .contact .field input, .contact .field textarea {
   border: none;
+}
+
+.contact .field textarea {
+  resize: vertical;
 }
 
 .contact .field input:focus,
