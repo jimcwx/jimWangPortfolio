@@ -12,7 +12,7 @@ body {
     li {
       @include flexCenter(row);
       position: relative;
-  
+      
       p {
         position:absolute;
         opacity:0;
@@ -72,6 +72,7 @@ body {
         font-weight: bold;
         transform:scale(1);
         text-transform: uppercase;
+        bottom:0;
       }
       a{
         opacity:0.1;

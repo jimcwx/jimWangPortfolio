@@ -1611,6 +1611,7 @@ body .sideNav li p {
   -webkit-transform: scale(1);
           transform: scale(1);
   text-transform: uppercase;
+  bottom: 0;
 }
 
 body .sideNav li a {
