@@ -17,8 +17,8 @@
     margin-bottom: 100px;
 
     .pictureLink {
-      width:60%;
-
+      width:calc(60% - 20px);
+      margin: 10px;
       &:hover,
       &:focus {
         animation: upDown 0.5s;
