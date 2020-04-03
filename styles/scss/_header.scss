@@ -528,13 +528,17 @@ header {
 
 @media (max-width: 500px) {
   header {
-    .text {
-      h1.mainLine {
-        font-size: 4rem;
+    .wrapper {
+      .text {
+        h1 {
+          font-size: 3.5rem;
+        }
+        h2.firstLine {
+          font-size: 2rem;
+        }
       }
-      h2.firstLine {
-        font-size: 2rem;
-      }
+
     }
   }
 }
+

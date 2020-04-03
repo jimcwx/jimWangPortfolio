@@ -51,6 +51,7 @@
         transform:scale(0.85);
         position:relative;
       }
+      
     }
   }
 
@@ -142,6 +143,19 @@
     .project4 {
       p {
         margin: 24px 0 24px 0;
+      }
+    }
+  }
+  @media (max-width: 450px) {
+    .project {
+
+      .skillsUsed li {
+        width: calc(100% / 3 - 10px);
+      }
+
+      .button {
+        min-width: 140px;
+        margin-top: 5px;
       }
     }
   }

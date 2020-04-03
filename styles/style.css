@@ -1558,10 +1558,10 @@ header img.thirdLine {
 }
 
 @media (max-width: 500px) {
-  header .text h1.mainLine {
-    font-size: 4rem;
+  header .wrapper .text h1 {
+    font-size: 3.5rem;
   }
-  header .text h2.firstLine {
+  header .wrapper .text h2.firstLine {
     font-size: 2rem;
   }
 }
@@ -2124,6 +2124,16 @@ body .exitMenu {
   }
 }
 
+@media (max-width: 450px) {
+  .projects .project .skillsUsed li {
+    width: calc(100% / 3 - 10px);
+  }
+  .projects .project .button {
+    min-width: 140px;
+    margin-top: 5px;
+  }
+}
+
 @-webkit-keyframes upDown {
   0% {
     -webkit-transform: translateY(0);
@@ -2468,6 +2478,6 @@ footer p {
 
 @media (max-width: 480px) {
   footer p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
