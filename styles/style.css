@@ -1606,7 +1606,7 @@ body .emailSMSide li p {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   color: #0d2e63;
-  text-shadow: 1px 1px 3px #d5eaefea;
+  text-shadow: 0px 0px 3px #d5eaefea;
   font-size: 1.4rem;
   font-weight: bold;
   bottom: 0;
@@ -1838,6 +1838,8 @@ body .exitMenu {
     z-index: 1001;
   }
   body .enable {
+    -webkit-animation: appear 0.5s;
+            animation: appear 0.5s;
     display: block;
   }
 }
