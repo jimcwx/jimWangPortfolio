@@ -109,6 +109,42 @@
       margin: 0 0 0 30px;
     }
   }
+
+  //Responsive design for project section
+  @media (max-width: 820px) {
+    h2 {
+      text-align: center;
+      padding: 20px;
+    }
+    .project {
+      @include flexCenter(column);
+      .pictureLink {
+        width: 80%;
+      }
+      .text {
+        width: 80%;
+        text-align: center;
+
+        h3 {
+          margin: 10px;
+        }
+      }
+      ul {
+        @include flexCenter(row);
+      }
+
+      .button {
+        margin: 0 10px 0 10px;
+      }
+    }
+
+    .project2,
+    .project4 {
+      p {
+        margin: 24px 0 24px 0;
+      }
+    }
+  }
 }
 
 @keyframes upDown {

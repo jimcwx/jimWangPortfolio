@@ -31,8 +31,6 @@
 
     a:focus,
     a:hover {
-      display: inline-block;
-      transform:scale(1.3);
       outline:1px solid $thirdBackground;
       background: $primaryText;
       color: $primaryBackground;
@@ -47,6 +45,13 @@
     .too,
     .sharp {
       font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 680px) {
+    flex-direction: column;
+    img{
+      display: none;
     }
   }
 }

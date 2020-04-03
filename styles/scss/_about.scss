@@ -22,4 +22,21 @@
   .scrollDownArrow:focus {
     outline: 3px dotted white;
   }
+
+  //Responsive design for about section
+  @media (max-width: 760px) {
+    .wrapper {
+      @include flexCenter(column);
+      .text {
+        padding: 10px 6% 10px 6%;
+      }
+      h2 {
+        text-align: center;
+      }
+      img{
+        position: inherit;
+        margin-bottom: 20px;
+      }
+    }
+  }
 }

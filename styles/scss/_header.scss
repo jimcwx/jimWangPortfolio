@@ -493,3 +493,48 @@ header {
     transform:translateY(0px);
   }
 }
+
+// Responsive design for header
+
+@media (max-width: 680px) {
+  header {
+    img.thirdLine {
+      transform:scale(4);
+    }
+
+    .wrapper {
+      padding: 10px;
+    }
+
+    @keyframes hireMe {
+      0%{
+        transform:scale(4);
+        opacity:0;
+        z-index:0;
+      }
+      75%{
+        transform:scale(4);
+        opacity:0.2;
+        z-index:0;
+      }
+      100% {
+        transform:scale(4);
+        opacity:0.4;
+        z-index:0;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    .text {
+      h1.mainLine {
+        font-size: 4rem;
+      }
+      h2.firstLine {
+        font-size: 2rem;
+      }
+    }
+  }
+}

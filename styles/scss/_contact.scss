@@ -108,4 +108,19 @@
       box-shadow: 4px 4px 4px $primaryText;
     }
   }
+
+  //Responsive design for contact section
+  @media (max-width: 760px) {
+    h2 {
+      text-align: center;
+    }
+
+    ul li {
+      width: 100%;
+
+      a {
+        font-size: 3rem;
+      }
+    }
+  }
 }

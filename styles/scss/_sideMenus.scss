@@ -57,6 +57,7 @@ body {
     top:50%;
     right:5%;
     transform: translate(-50%, -50%);
+    transition: all 0.3s;
 
     li {
       @include flexCenter(row);
@@ -111,6 +112,33 @@ body {
     animation-fill-mode:forwards;
   }
 
+  .hamburger {
+    font-size: 3rem;
+    margin:0;
+    padding: 20px;
+    z-index: 1000;
+    position:fixed;
+    top:3%;
+    right:3%;
+    color: $primaryText;
+    text-shadow: 2px 2px $primaryBackground;
+    display:none;
+    cursor: pointer;
+  }
+
+  .exitMenu {
+    font-size: 3rem;
+    margin:0;
+    padding: 20px;
+    z-index: 1002;
+    position:fixed;
+    top:3%;
+    right:3%;
+    color: $primaryText;
+    text-shadow: 2px 2px $primaryBackground;
+    cursor: pointer;
+  }
+
   @keyframes appear {
     0% {
       opacity: 0;
@@ -124,4 +152,46 @@ body {
   }
 
 
+  @media (max-width: 1577px) {
+    .emailSMSide {
+      left: 6%;
+    }
+    .sideNav {
+      right: 0;
+    }
+  }
+
+  @media (max-width: 1421px) {
+    .emailSMSide {
+      display:none;
+    }
+    .hamburger,
+    .exitMenu {
+      top:0;
+      right:0;
+    }
+    .menuGone {
+      width: 100vw;
+      height: 100vh;
+      margin: 0 auto;
+      left: -100%;
+      right: 0;
+      background:$primaryBackground;
+      @include flexCenter(column);
+      z-index: 1001;
+    }
+    .menuHere {
+      width: 100vw;
+      height: 100vh;
+      margin: 0 auto;
+      left: 50%;
+      right: 0;
+      background:$primaryBackground;
+      @include flexCenter(column);
+      z-index: 1001;
+    }
+    .enable {
+      display: block;
+    }
+  }
 }
