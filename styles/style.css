@@ -503,7 +503,7 @@ header .wrapper .text h2 {
 header .wrapper .scrollDownArrow {
   max-width: 50px;
   position: absolute;
-  bottom: 20px;
+  bottom: 80px;
   left: calc(50% - 25px);
 }
 
@@ -1828,6 +1828,10 @@ body .exitMenu {
   padding: 12%;
 }
 
+.about .wrapper .text p {
+  letter-spacing: 1px;
+}
+
 .about .scrollDownArrow:focus {
   outline: 3px dotted white;
 }
@@ -1910,6 +1914,10 @@ body .exitMenu {
 
 .projects .project .text {
   width: 40%;
+}
+
+.projects .project .text p {
+  letter-spacing: 1px;
 }
 
 .projects .project ul {
