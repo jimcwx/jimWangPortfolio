@@ -19,6 +19,7 @@
   .leftRight {
     @include flexCenter(row);
     flex-wrap:wrap;
+    margin: 0 12%;
 
     .emailSM {
       width:calc(35% - 10px);
@@ -37,34 +38,36 @@
         color: $primaryBackground;
         cursor:pointer;
         transition: all 0.5s;
-        transform:scale(1) rotate(0);
       }
 
       button:focus,
       button:hover {
-        animation: wiggleFlash 0.5s;
-        transform:scale(1.25);
+        color:$primaryText;
+        box-shadow:2px 2px $secondaryText, -2px -2px $secondaryText;
+        background:white;
       }
     }
   }
 
   ul {
-    @include flexCenter(row);
+    @include flex(row);
     flex-wrap:wrap;
-
     li {
       width: 50%;
       padding: 10px 0;
-      @include flexCenter(row);
+      @include flex(row);
       position:relative;
+      align-content: center;
     }
 
     p{
       position:absolute;
       opacity:0;
       z-index:0;
+      
       transition: all 0.5s;
       color:$primaryText;
+      font-size: 1.7rem;
     }
 
     a{
@@ -96,6 +99,7 @@
     margin-top: 5px;
     input, textarea {
       border:none;
+      padding: 5px;
     }
 
     textarea {

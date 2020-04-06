@@ -145,6 +145,7 @@ header {
     position:absolute;
     top:50%;
     transform:scale(6);
+    // overflow: hidden;
   }
 }
 
@@ -499,7 +500,9 @@ header {
 @media (max-width: 680px) {
   header {
     img.thirdLine {
-      transform:scale(4);
+      transform:scale(3);
+      max-width: 100px;
+      width: 100%;
     }
 
     .wrapper {
@@ -508,17 +511,17 @@ header {
 
     @keyframes hireMe {
       0%{
-        transform:scale(4);
+        transform:scale(3);
         opacity:0;
         z-index:0;
       }
       75%{
-        transform:scale(4);
+        transform:scale(3);
         opacity:0.2;
         z-index:0;
       }
       100% {
-        transform:scale(4);
+        transform:scale(3);
         opacity:0.4;
         z-index:0;
       }

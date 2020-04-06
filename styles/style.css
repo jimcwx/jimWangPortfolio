@@ -348,62 +348,14 @@ nav a {
   text-transform: uppercase;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  -webkit-transform: scale(1) rotate(0);
-          transform: scale(1) rotate(0);
 }
 
 .button a:focus,
 .button a:hover {
-  -webkit-animation: wiggleFlash 0.5s;
-          animation: wiggleFlash 0.5s;
-  -webkit-transform: scale(1.25);
-          transform: scale(1.25);
-}
-
-@-webkit-keyframes wiggleFlash {
-  0% {
-    -webkit-transform: scale(1) rotate(-5deg);
-            transform: scale(1) rotate(-5deg);
-    background: #275c90;
-    color: #d5eaef;
-  }
-  50% {
-    -webkit-transform: scale(1.15) rotate(5deg);
-            transform: scale(1.15) rotate(5deg);
-    color: #0d2e63;
-    -webkit-box-shadow: 2px 2px #275c90, -2px -2px #275c90;
-            box-shadow: 2px 2px #275c90, -2px -2px #275c90;
-    background: white;
-  }
-  100% {
-    -webkit-transform: scale(1.25) rotate(0deg);
-            transform: scale(1.25) rotate(0deg);
-    background: #275c90;
-    color: #d5eaef;
-  }
-}
-
-@keyframes wiggleFlash {
-  0% {
-    -webkit-transform: scale(1) rotate(-5deg);
-            transform: scale(1) rotate(-5deg);
-    background: #275c90;
-    color: #d5eaef;
-  }
-  50% {
-    -webkit-transform: scale(1.15) rotate(5deg);
-            transform: scale(1.15) rotate(5deg);
-    color: #0d2e63;
-    -webkit-box-shadow: 2px 2px #275c90, -2px -2px #275c90;
-            box-shadow: 2px 2px #275c90, -2px -2px #275c90;
-    background: white;
-  }
-  100% {
-    -webkit-transform: scale(1.25) rotate(0deg);
-            transform: scale(1.25) rotate(0deg);
-    background: #275c90;
-    color: #d5eaef;
-  }
+  color: #0d2e63;
+  -webkit-box-shadow: 2px 2px #275c90, -2px -2px #275c90;
+          box-shadow: 2px 2px #275c90, -2px -2px #275c90;
+  background: white;
 }
 
 .topBar {
@@ -1509,48 +1461,50 @@ header img.thirdLine {
 
 @media (max-width: 680px) {
   header img.thirdLine {
-    -webkit-transform: scale(4);
-            transform: scale(4);
+    -webkit-transform: scale(3);
+            transform: scale(3);
+    max-width: 100px;
+    width: 100%;
   }
   header .wrapper {
     padding: 10px;
   }
   @-webkit-keyframes hireMe {
     0% {
-      -webkit-transform: scale(4);
-              transform: scale(4);
+      -webkit-transform: scale(3);
+              transform: scale(3);
       opacity: 0;
       z-index: 0;
     }
     75% {
-      -webkit-transform: scale(4);
-              transform: scale(4);
+      -webkit-transform: scale(3);
+              transform: scale(3);
       opacity: 0.2;
       z-index: 0;
     }
     100% {
-      -webkit-transform: scale(4);
-              transform: scale(4);
+      -webkit-transform: scale(3);
+              transform: scale(3);
       opacity: 0.4;
       z-index: 0;
     }
   }
   @keyframes hireMe {
     0% {
-      -webkit-transform: scale(4);
-              transform: scale(4);
+      -webkit-transform: scale(3);
+              transform: scale(3);
       opacity: 0;
       z-index: 0;
     }
     75% {
-      -webkit-transform: scale(4);
-              transform: scale(4);
+      -webkit-transform: scale(3);
+              transform: scale(3);
       opacity: 0.2;
       z-index: 0;
     }
     100% {
-      -webkit-transform: scale(4);
-              transform: scale(4);
+      -webkit-transform: scale(3);
+              transform: scale(3);
       opacity: 0.4;
       z-index: 0;
     }
@@ -2332,6 +2286,7 @@ body .exitMenu {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 0 12%;
 }
 
 .contact .leftRight .emailSM {
@@ -2354,16 +2309,14 @@ body .exitMenu {
   cursor: pointer;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  -webkit-transform: scale(1) rotate(0);
-          transform: scale(1) rotate(0);
 }
 
 .contact .leftRight form button:focus,
 .contact .leftRight form button:hover {
-  -webkit-animation: wiggleFlash 0.5s;
-          animation: wiggleFlash 0.5s;
-  -webkit-transform: scale(1.25);
-          transform: scale(1.25);
+  color: #0d2e63;
+  -webkit-box-shadow: 2px 2px #275c90, -2px -2px #275c90;
+          box-shadow: 2px 2px #275c90, -2px -2px #275c90;
+  background: white;
 }
 
 .contact ul {
@@ -2374,12 +2327,6 @@ body .exitMenu {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -2394,13 +2341,9 @@ body .exitMenu {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   position: relative;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .contact ul p {
@@ -2410,6 +2353,7 @@ body .exitMenu {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   color: #0d2e63;
+  font-size: 1.7rem;
 }
 
 .contact ul a {
@@ -2448,6 +2392,7 @@ body .exitMenu {
 
 .contact .field input, .contact .field textarea {
   border: none;
+  padding: 5px;
 }
 
 .contact .field textarea {

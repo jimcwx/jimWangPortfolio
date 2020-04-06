@@ -30,6 +30,7 @@ p, li, a, label {
 p {
   line-height: 1.4;
   font-size: 1.5rem;
+  
 }
 
 label {
@@ -94,32 +95,12 @@ nav a {
     text-transform: uppercase;
     
     transition: all 0.5s;
-    transform:scale(1) rotate(0);
   }
 
   a:focus,
   a:hover {
-    animation: wiggleFlash 0.5s;
-    transform:scale(1.25);
-  }
-}
-
-
-@keyframes wiggleFlash {
-  0%{
-    transform:scale(1) rotate(-5deg);
-    background:$secondaryText;
-    color:$primaryBackground;
-  }
-  50%{
-    transform:scale(1.15) rotate(5deg);
     color:$primaryText;
     box-shadow:2px 2px $secondaryText, -2px -2px $secondaryText;
     background:white;
-  }
-  100%{
-    transform:scale(1.25) rotate(0deg);
-    background:$secondaryText;
-    color:$primaryBackground;
   }
 }
